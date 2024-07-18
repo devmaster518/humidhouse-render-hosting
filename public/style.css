@@ -4,7 +4,20 @@
 
 
 
-
+@media(max-width: 768px){
+    .logo-container {
+        position: absolute !important;
+        width: 30% !important;
+        /* Adjust positioning for ltr */
+        translate: 119% 450%;
+    }
+    
+    /* RTL direction */
+    [dir="rtl"] .logo-container {
+        /* Adjust positioning for rtl */
+        translate: -119% 450%;
+    }
+}
 
 @font-face {
     font-family:FuturaCyrillicBook;
@@ -261,14 +274,7 @@ html[dir="rtl"] .flower {
 .site-logo img {
     width: 100px;
 }
-.rotate-menu {
-    position: absolute;
-    top: 50vh;
-    left: 0;
-    transform-origin: top left;
-    transform: rotate(270deg) translateX(-50%);
-    z-index: 9;
-}
+
 .rotate-menu ul li {
     display: inline-block;
     line-height: normal;
@@ -697,7 +703,7 @@ body.show-sidebar-cart #sidebar-cart {
 .subscribe-heading h3 {
     font-family:FuturaCyrillicLight;
 }
-.form-control-newsletter {
+.form-control-newsletter {    
     padding: .5rem 0;
     font-size: 1.75rem;
     color: var(--bs-body-color);
@@ -1630,6 +1636,10 @@ form.needs-validation {
     }
     .newsletter {
         float: left;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 100%;
     }
     .gosha-content-paragraph p {
         font-size: 27px;
@@ -1761,6 +1771,13 @@ form.needs-validation {
         text-align: left;
         margin-top:10px;
     }
+    .google-pay{
+        float: left;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        width: 100%;
+    }
     .google-pay ul li img {
         width: 40px;
         border: solid 1px #555555;
@@ -1799,4 +1816,22 @@ form.needs-validation {
 [dir="rtl"] .logo-container {
     /* Adjust positioning for rtl */
     translate: -119% 210%;
+}
+
+.rotate-menu {
+    position: absolute;
+    top: 50vh;
+    left: 0;
+    transform-origin: top left;
+    transform: rotate(270deg) translateX(-50%);
+    z-index: 9;
+}
+
+[dir="rtl"] .rotate-menu {
+    position: absolute;
+    top: 50vh;
+    right: 0;
+    transform-origin: top right;
+    transform: rotate(90deg) translateX(18%);
+    z-index: 9;
 }
