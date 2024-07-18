@@ -1787,3 +1787,16 @@ form.needs-validation {
 .form-control-wrapper.form-control-icon-end .position-absolute-end {
     right: 0rem;
 }
+
+.logo-container {
+    position: absolute !important;
+    width: 30% !important;
+    /* Adjust positioning for ltr */
+    translate: 119% 210%;
+}
+
+/* RTL direction */
+[dir="rtl"] .logo-container {
+    /* Adjust positioning for rtl */
+    translate: -119% 210%;
+}

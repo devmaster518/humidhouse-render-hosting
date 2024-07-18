@@ -138,11 +138,10 @@
 		<section class="banner-slider position-relative p-0">
 			<div class="row g-0 h-100">
 				<div class="col-md-6">
-					<div style="position: absolute; translate: 119% 210%; width: 30%;">
+					<div class="logo-container">
 						<img src="images/logo.png">
 					</div>
-					<img class="d-block w-100 h-100 object-fit-cover" src="images/banner-1.jpg" />
-					
+					<img class="d-block w-100 h-100 object-fit-cover" src="images/banner-1.jpg" />					
 				</div>
 				<div class="col-md-6">
 					<div class="row g-0 row-cols-1 h-100">
@@ -480,10 +479,10 @@
     <script src="js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>	
 	 <script src="js/wow.js"></script>	
-	 <script src="slider/owl.carousel.js"></script>
-	 <script src="slider/slick.min.js"></script>
-	 <script src="js/LanguageSelector.min.js"></script>
-	 <script src="js/scroll.min.js"></script>
+    <script src="js/scroll.min.js"></script>
+    <script src="slider/owl.carousel.js"></script>
+    <script src="slider/slick.min.js"></script>
+    <script src="js/LanguageSelector.min.js"></script>
     <script src="js/locale.js"></script>
 	<script>
 	$(document).ready(function($) {
@@ -527,6 +526,7 @@
 	$(document).ready(function() {
 
 		$("#owl-demo1").owlCarousel({
+			rtl:true,
 			loop:true,
     		margin:20,
     		nav:true,
@@ -564,7 +564,7 @@
 	</script> 
 	<script>
 		$(document).ready(function() {
-			$("#owl-demo2").slick({
+			var options = {
 				speed:5e3,
 				autoplay:!0,
 				autoplaySpeed:0,
@@ -577,7 +577,12 @@
 				initialSlide:2,
 				arrows:!1,
 				buttons:!1
-			})
+			};
+			if($("#langSelector").val() == "ar")
+			{
+				options.rtl = true;
+			}
+			$("#owl-demo2").slick(options);
 		});
 
 	</script>
