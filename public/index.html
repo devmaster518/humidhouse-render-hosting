@@ -10,7 +10,31 @@
         <link rel="stylesheet" href="css/font-awesome.min.css"> 
 		<link rel="stylesheet" href="slider/owl.carousel.css">					
 		<link rel="stylesheet" href="slider/owl.theme.default.css">
-		<link rel="stylesheet" href="slider/slick.css">			
+		<link rel="stylesheet" href="slider/slick.css">		
+		<style>
+			@media(max-width: 768px){
+				.logo-container {
+					position: absolute !important;
+					width: 30% !important;
+					/* Adjust positioning for ltr */
+					translate: 119% 450%;
+				}
+				
+				/* RTL direction */
+				[dir="rtl"] .logo-container {
+					/* Adjust positioning for rtl */
+					translate: -119% 450%;
+				}
+
+				.footer-container-contents {
+					text-align: center !important;
+				}
+
+				.bottom-footer{					
+					text-align: center !important;
+				}
+			}
+		</style>	
 	</head>
 	<body class="h-100">
 		<!------------------------------Header Start-------------------->
@@ -392,7 +416,7 @@
 			</div>
 		</section>
 		<footer>
-			<div class="container">
+			<div class="container footer-container-contents">
 				<div class="row">
 					<div class="col-md-2 col-sm-6 col-xs-6">
 						<div class="footer-menu">
@@ -457,17 +481,18 @@
 			<div class="bottom-footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-4 col-sm-6 col-xs-12">
+							<div class="google-pay">
+								<p>site by <a href="#" target="_blank" style="margin:auto !important;">chaos theory</a></p>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12">
 							<div class="copyright">
 								<p>&copy; goshá 2020</p>
 								<p> all rights reserved <a href="mailto:hello@goshaflowers.com"> hello@goshaflowers.com</a></p>
 							</div>
 						</div>
-						<div class="col-md-6">
-							<div class="google-pay">
-								<p>site by <a href="#" target="_blank">chaos theory</a></p>
-							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>
