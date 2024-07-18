@@ -8,321 +8,73 @@
         <link rel="stylesheet" href="style.css">	
         <link rel="stylesheet" href="css/animate.css">	
         <link rel="stylesheet" href="css/font-awesome.min.css"> 
-	<link rel="stylesheet" href="slider/owl.carousel.css">			
+	<link rel="stylesheet" href="slider/owl.carousel.css">	
+	<style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .form-container {
+            width: 60%;
+        }
+        .contact-info {
+            width: 30%;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #000;
+        }
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #000;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            padding: 5px 0;
+        }
+        textarea {
+            height: 200px;
+        }
+        .submit-btn {
+            display: block;
+            border: 1px solid #000;
+            padding: 10px 20px;
+            font-size: 1rem;
+            background: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+    <title>Contact Form</title>		
 	</head>
-	<body>
-		
-<!------------------------------Header Start-------------------->
-<header class="header-menu">
-<div class="container-fluid">
-<div class="row">
-<div class="col-md-4">
-	<div class="flower">Flowers</div>
-  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-  <label for="openSidebarMenu" class="sidebarIconToggle">
-    <div class="spinner diagonal part-1"></div>
-    <div class="spinner horizontal"></div>
-    <div class="spinner diagonal part-2"></div>
-  </label>
-  <div id="sidebarMenu">
-    <ul class="sidebarMenuInner">
-	  <h3>flowers</h3>
-      <li><a href="#" target="_blank">goshá voyage</a></li>
-      <li><a href="#" target="_blank">occasions spéciale</a></li>
-      <li><a href="#" target="_blank">art deco</a></li>
-      <li><a href="#" target="_blank">bespoke bouquets</a></li>
-      <li><a href="#" target="_blank">goshá weekly</a></li>
-	  <h3>shop</h3>
-      <li><a href="#" target="_blank">moon calendar</a></li>
-      <li><a href="#" target="_blank">candles</a></li>
-      <li><a href="#" target="_blank">vases</a></li>
-      <li><a href="#" target="_blank">ceramics</a></li>
-      <li><a href="#" target="_blank">goshá</a></li>
-    </ul>
-  </div>
-  </div>
-  <div class="col-md-4">
-	  <div class="site-logo">
-			<img src="images/logo.png">
+	<body>	
+		<div class="form-container">
+			<form action="#" method="post">
+				<label for="name">name</label>
+				<input type="text" id="name" name="name">
+
+				<label for="email">email</label>
+				<input type="email" id="email" name="email">
+
+				<label for="message"><i>dear goshá,</i></label>
+				<textarea id="message" name="message"></textarea>
+
+				<button type="submit" class="submit-btn">submit</button>
+			</form>
 		</div>
-	</div>
-  <div class="col-md-4">
- <nav id="main-nav">
-	<a class="cart-button" href="#">
-		<span class="bag-count">cart <i class="fa fa-shopping-bag"></i></span>
-	</a>
-</nav>
-<aside id="sidebar-cart">
-	<main>
-		<a href="#" class="close-button"><span class="close-icon">X</span></a>
-		<h2>Shopping Bag <span class="count">3</span></h2>
-		<ul class="products">
-			<li class="product">
-				<a href="#" class="product-link">
-					<span class="product-image">
-						<img src="images/blog-img-3.jpg" alt="Product Photo">
-					</span>
-					<span class="product-details">
-						<h3>Very Cool Product One</h3>
-						<span class="qty-price">
-							<span class="qty">
-								<button class="minus-button" id="minus-button-1">-</button>
-								<input type="number" id="qty-input-1" class="qty-input" step="1" min="1" max="1000" name="qty-input" value="1" pattern="[0-9]*" title="Quantity" inputmode="numeric">
-								<button class="plus-button" id="plus-button-1">+</button>
-								<input type="hidden" name="item-price" id="item-price-1" value="12.00">
-							</span>
-							<span class="price">$16.00</span>
-						</span>
-					</span>
-				</a>
-				<a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
-			</li>
-			<li class="product">
-				<a href="#" class="product-link">
-					<span class="product-image">
-						<img src="images/blog-img-3.jpg" alt="Product Photo">
-					</span>
-					<span class="product-details">
-						<h3>Very Cool Product Two with Long Title</h3>
-						<span class="qty-price">
-							<span class="qty">
-								<button class="minus-button" id="minus-button-1">-</button>
-								<input type="number" id="qty-input-2" class="qty-input" step="1" min="1" max="1000" name="qty-input" value="1" pattern="[0-9]*" title="Quantity" inputmode="numeric">
-								<button class="plus-button" id="plus-button-1">+</button>
-								<input type="hidden" name="item-price" id="item-price-2" value="12.00">
-							</span>
-							<span class="price">$28.00</span>
-						</span>
-					</span>
-				</a>
-				<a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
-			</li>
-			<li class="product">
-				<a href="#" class="product-link">
-					<span class="product-image">
-						<img src="images/blog-img-3.jpg" alt="Product Photo">
-					</span>
-					<span class="product-details">
-						<h3>Very Cool Product Three</h3>
-						<span class="qty-price">
-							<span class="qty">
-								<form action="#" name="qty-form" id="qty-form-1">
-									<button class="minus-button" id="minus-button-1">-</button>
-									<input type="number" id="qty-input-3" class="qty-input" step="1" min="1" max="1000" name="qty-input" value="1" pattern="[0-9]*" title="Quantity" inputmode="numeric">
-									<button class="plus-button" id="plus-button-1">+</button>
-									<input type="hidden" name="item-price" id="item-price-3" value="12.00">
-								</form>
-							</span>
-							<span class="price">$12.00</span>
-						</span>
-					</span>
-				</a>
-				<a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
-			</li>
-		</ul>
-		<div class="totals">
-			<div class="subtotal">
-				<span class="label">Subtotal:</span> <span class="amount">$54.00</span>
-			</div>
+		<div class="contact-info">
+			<p><strong>phone</strong> +971 4 328 99 03</p>
+			<p><strong>email</strong> hello@goshaflowers.com</p>
+			<p><strong>studio address</strong> 8th street, b2-w8, al-quoz dubai, uae</p>
 		</div>
-		<div class="action-buttons">
-			<a class="view-cart-button" href="#">Cart</a><a class="checkout-button" href="#">Checkout</a>
-		</div>
-	</main>
-</aside>
-<div id="sidebar-cart-curtain"></div> 
-</div>
-</div>
-</div>
-</header>
-
-<section class="page-heading">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>Checkout</h2>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="checkout-page">
-	<div class="container">
-		<div class="row">
-    <div class="col-md-8">
-      <h4 class="mb-3">Billing address</h4>
-      <form class="needs-validation" novalidate>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="firstName">First name</label>
-            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Valid first name is required.
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="lastName">Last name</label>
-            <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
-            <div class="invalid-feedback">
-              Valid last name is required.
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="username">Username</label>
-          <div class="input-group">
-            <input type="text" class="form-control" id="username" placeholder="Username" required>
-            <div class="invalid-feedback" style="width: 100%;">
-              Your username is required.
-            </div>
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="email">Email <span class="text-muted">(Optional)</span></label>
-          <input type="email" class="form-control" id="email" placeholder="you@example.com">
-          <div class="invalid-feedback">
-            Please enter a valid email address for shipping updates.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="address">Address</label>
-          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
-          <div class="invalid-feedback">
-            Please enter your shipping address.
-          </div>
-        </div>
-
-        <div class="mb-3">
-          <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
-        </div>
-
-        <div class="row">
-          <div class="col-md-5 mb-3">
-            <label for="country">Country</label>
-            <select class="custom-select d-block w-100" id="country" required>
-              <option value="">Choose...</option>
-              <option>United States</option>
-            </select>
-            <div class="invalid-feedback">
-              Please select a valid country.
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <label for="state">State</label>
-            <select class="custom-select d-block w-100" id="state" required>
-              <option value="">Choose...</option>
-              <option>California</option>
-            </select>
-            <div class="invalid-feedback">
-              Please provide a valid state.
-            </div>
-          </div>
-          <div class="col-md-3 mb-3">
-            <label for="zip">Zip</label>
-            <input type="text" class="form-control" id="zip" placeholder="" required>
-            <div class="invalid-feedback">
-              Zip code required.
-            </div>
-          </div>
-        </div>
-        <hr class="mb-4">
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="same-address">
-          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
-        </div>
-        <div class="custom-control custom-checkbox">
-          <input type="checkbox" class="custom-control-input" id="save-info">
-          <label class="custom-control-label" for="save-info">Save this information for next time</label>
-        </div>
-        <hr class="mb-4">
-
-        <h4 class="mb-3">Payment</h4>
-
-        <div class="d-block my-3">
-          <div class="custom-control custom-radio">
-            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
-            <label class="custom-control-label" for="credit">Credit card</label>
-          </div>
-          <div class="custom-control custom-radio">
-            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
-            <label class="custom-control-label" for="debit">Debit card</label>
-          </div>
-          <div class="custom-control custom-radio">
-            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-            <label class="custom-control-label" for="paypal">PayPal</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="cc-name">Name on card</label>
-            <input type="text" class="form-control" id="cc-name" placeholder="" required>
-            <small class="text-muted">Full name as displayed on card</small>
-            <div class="invalid-feedback">
-              Name on card is required
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="cc-number">Credit card number</label>
-            <input type="text" class="form-control" id="cc-number" placeholder="" required>
-            <div class="invalid-feedback">
-              Credit card number is required
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 mb-3">
-            <label for="cc-expiration">Expiration</label>
-            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
-            <div class="invalid-feedback">
-              Expiration date required
-            </div>
-          </div>
-          <div class="col-md-6 mb-3">
-            <label for="cc-cvv">CVV</label>
-            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
-            <div class="invalid-feedback">
-              Security code required
-            </div>
-          </div>
-        </div>
-        <hr class="mb-4">
-        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
-      </form>
-    </div><!-------------col-md-8---------------->
-	
-	<div class="col-md-4">
-		<div class="total-price-table">
-		<table class="table">
-		  <tbody>
-			<tr>
-			  <td>Subtotal</td>
-			  <td>AED 1,940.00</td>
-			</tr>
-			<tr>
-			  <td>Shipping</td>
-			  <td>AED 50.00</td>
-			</tr>
-			<tr>
-			  <td>Estimated taxes</td>
-			  <td>AED 97.00</td>
-			</tr>
-			<tr>
-			  <td><strong>Total</strong></td>
-			  <td><strong>AED 2,087.00</strong></td>
-			</tr>			
-		  </tbody>
-		</table>			
-		</div>
-	</div>
-  </div>
-  </div>
-</section>
-
-<footer>
+		<footer>
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-2 col-sm-6 col-xs-6">
@@ -400,67 +152,6 @@
 			</div>
 		</div>
 	</div>
-</footer>
-
-
-<!----------------------------Footer End-------------------------->
-
-
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>	
-	 <script src="js/wow.js"></script>	
-    <script src="js/scroll.min.js"></script>
-	
-		<script>
-	$(document).ready(function($) {
-	// Declare the body variable
-	var $body = $("body");
-
-	// Function that shows and hides the sidebar cart
-	$(".cart-button, .close-button, #sidebar-cart-curtain").click(function(e) {
-		e.preventDefault();
-		
-		// Add the show-sidebar-cart class to the body tag
-		$body.toggleClass("show-sidebar-cart");
-
-		// Check if the sidebar curtain is visible
-		if ($("#sidebar-cart-curtain").is(":visible")) {
-			// Hide the curtain
-			$("#sidebar-cart-curtain").fadeOut(500);
-		} else {
-			// Show the curtain
-			$("#sidebar-cart-curtain").fadeIn(500);
-		}
-	});
-	
-	// Function that adds or subtracts quantity when a 
-	// plus or minus button is clicked
-	$body.on('click', '.plus-button, .minus-button', function () {
-		// Get quanitity input values
-		var qty = $(this).closest('.qty').find('.qty-input');
-		var val = parseFloat(qty.val());
-		var max = parseFloat(qty.attr('max'));
-		var min = parseFloat(qty.attr('min'));
-		var step = parseFloat(qty.attr('step'));
-
-		// Check which button is clicked
-		if ($(this).is('.plus-button')) {
-			// Increase the value
-			qty.val(val + step);
-		} else {
-			// Check if minimum button is clicked and that value is 
-			// >= to the minimum required
-			if (min && min >= val) {
-				// Do nothing because value is the minimum required
-				qty.val(min);
-			} else if (val > 0) {
-				// Subtract the value
-				qty.val(val - step);
-			}
-		}
-	});
-});
-
-	</script>
+		</footer>  
 	</body>
 </html>
