@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="eg">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">	
+        <link rel="stylesheet" href="css/animate.css">	
+        <link rel="stylesheet" href="css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="slider/owl.carousel.css">			
+	</head>
+	<body>
+		
+<!------------------------------Header Start-------------------->
+<header class="header-menu">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-4">
+	<div class="flower">Flowers</div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+	  <h3>flowers</h3>
+      <li><a href="#" target="_blank">goshá voyage</a></li>
+      <li><a href="#" target="_blank">occasions spéciale</a></li>
+      <li><a href="#" target="_blank">art deco</a></li>
+      <li><a href="#" target="_blank">bespoke bouquets</a></li>
+      <li><a href="#" target="_blank">goshá weekly</a></li>
+	  <h3>shop</h3>
+      <li><a href="#" target="_blank">moon calendar</a></li>
+      <li><a href="#" target="_blank">candles</a></li>
+      <li><a href="#" target="_blank">vases</a></li>
+      <li><a href="#" target="_blank">ceramics</a></li>
+      <li><a href="#" target="_blank">goshá</a></li>
+    </ul>
+  </div>
+  </div>
+  <div class="col-md-4">
+	  <div class="site-logo">
+			<img src="images/logo.png">
+		</div>
+	</div>
+  <div class="col-md-4">
+ <nav id="main-nav">
+	<a class="cart-button" href="#">
+		<span class="bag-count">cart <i class="fa fa-shopping-bag"></i></span>
+	</a>
+</nav>
+<aside id="sidebar-cart">
+	<main>
+		<a href="#" class="close-button"><span class="close-icon">X</span></a>
+		<h2>Shopping Bag <span class="count">3</span></h2>
+		<ul class="products">
+			<li class="product">
+				<a href="#" class="product-link">
+					<span class="product-image">
+						<img src="images/blog-img-3.jpg" alt="Product Photo">
+					</span>
+					<span class="product-details">
+						<h3>Very Cool Product One</h3>
+						<span class="qty-price">
+							<span class="qty">
+								<button class="minus-button" id="minus-button-1">-</button>
+								<input type="number" id="qty-input-1" class="qty-input" step="1" min="1" max="1000" name="qty-input" value="1" pattern="[0-9]*" title="Quantity" inputmode="numeric">
+								<button class="plus-button" id="plus-button-1">+</button>
+								<input type="hidden" name="item-price" id="item-price-1" value="12.00">
+							</span>
+							<span class="price">$16.00</span>
+						</span>
+					</span>
+				</a>
+				<a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
+			</li>
+			<li class="product">
+				<a href="#" class="product-link">
+					<span class="product-image">
+						<img src="images/blog-img-3.jpg" alt="Product Photo">
+					</span>
+					<span class="product-details">
+						<h3>Very Cool Product Two with Long Title</h3>
+						<span class="qty-price">
+							<span class="qty">
+								<button class="minus-button" id="minus-button-1">-</button>
+								<input type="number" id="qty-input-2" class="qty-input" step="1" min="1" max="1000" name="qty-input" value="1" pattern="[0-9]*" title="Quantity" inputmode="numeric">
+								<button class="plus-button" id="plus-button-1">+</button>
+								<input type="hidden" name="item-price" id="item-price-2" value="12.00">
+							</span>
+							<span class="price">$28.00</span>
+						</span>
+					</span>
+				</a>
+				<a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
+			</li>
+			<li class="product">
+				<a href="#" class="product-link">
+					<span class="product-image">
+						<img src="images/blog-img-3.jpg" alt="Product Photo">
+					</span>
+					<span class="product-details">
+						<h3>Very Cool Product Three</h3>
+						<span class="qty-price">
+							<span class="qty">
+								<form action="#" name="qty-form" id="qty-form-1">
+									<button class="minus-button" id="minus-button-1">-</button>
+									<input type="number" id="qty-input-3" class="qty-input" step="1" min="1" max="1000" name="qty-input" value="1" pattern="[0-9]*" title="Quantity" inputmode="numeric">
+									<button class="plus-button" id="plus-button-1">+</button>
+									<input type="hidden" name="item-price" id="item-price-3" value="12.00">
+								</form>
+							</span>
+							<span class="price">$12.00</span>
+						</span>
+					</span>
+				</a>
+				<a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
+			</li>
+		</ul>
+		<div class="totals">
+			<div class="subtotal">
+				<span class="label">Subtotal:</span> <span class="amount">$54.00</span>
+			</div>
+		</div>
+		<div class="action-buttons">
+			<a class="view-cart-button" href="#">Cart</a><a class="checkout-button" href="#">Checkout</a>
+		</div>
+	</main>
+</aside>
+<div id="sidebar-cart-curtain"></div> 
+</div>
+</div>
+</div>
+</header>
+
+<section class="contact-heading">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="contact-us-heading">
+					<h2>Contact Us</h2>
+				</div>
+			</div>
+			<div class="col-md-8">
+				<div class="contact-img">
+					<img src="images/contact-img.png">
+					<img src="images/contact-img.png">
+					<img src="images/contact-img.png">
+					<img src="images/contact-img.png">
+					<img src="images/contact-img.png">
+				</div>			
+			</div>			
+		</div>
+	</div>
+</section>
+
+<section class="contact-info">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="contact-form-info">
+				<p><small>talk to goshá </small> we love, love, LOVE emails and phone calls and whatsapp messages. need more information, have questions, want to send us compliments or simply want to gossip with us over flowers? you know what to do.</p>
+					<form>
+						<input value="" type="text" name="your-name" placeholder="name">
+						<input value="" type="email" name="your-email" placeholder="email">
+						<div class="message">
+						<label>dear goshá,</label>
+						<textarea class="message-here" aria-label="Your message" required=""></textarea>
+						</div>
+						<button type="submit" class="submit-btn">submit</button>
+					</form>
+				</div>			
+			</div>
+			<div class="col-md-6">
+				<div class="contact-form-text">
+				<p><small>talk to goshá </small> we love, love, LOVE emails and phone calls and whatsapp messages. need more information, have questions, want to send us compliments or simply want to gossip with us over flowers? you know what to do.</p>
+					<ul class="contact-list">
+					<li>
+					  <span class="contact-title">phone</span>
+					  <span class="contact-details"><a href="tel:+97143289903">+971 4 328 99 03</a></span>
+					</li>
+				  
+					<li>
+					  <span class="contact-title">email</span>
+					  <span class="contact-details"><a href="mailto:hello@goshaflowers.com">hello@goshaflowers.com</a></span>
+					</li>
+				  
+					<li>
+					  <span class="contact-title">studio address</span>
+					  <span class="contact-details"> 8th street, b2-w8, al-quoz dubai, uae</span>
+					</li>
+				  
+				</ul>				
+				</div>			
+			</div>			
+		</div>
+	</div>
+</section>
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 col-sm-6 col-xs-6">
+				<div class="footer-menu">
+					<h3>customer services</h3>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">checkout</a></li>
+						<li><a href="#">Privacy-Policy</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-6 col-xs-6">
+				<div class="footer-menu">
+					<h3>shop</h3>
+					<ul>
+						<li><a href="#">candles</a></li>
+						<li><a href="#">vases</a></li>
+						<li><a href="#">gosha</a></li>
+						<li><a href="#">vases</a></li>
+						<li><a href="#">gosha</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-6 col-xs-6">
+				<div class="footer-menu">
+					<h3>information</h3>
+					<ul>
+					<li><a href="#">privacy policy</a></li>
+						<li><a href="#">terms & conditions</a></li>
+						<li><a href="#">terms of service</a></li>
+						<li><a href="#">refund policy</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-6 col-xs-6">
+				<div class="footer-menu">
+					<h3>connect</h3>
+					<ul>
+						<li><a href="#">contact</a></li>
+						<li><a href="#">instagram</a></li>
+						<li><a href="#">studios</a></li>
+						<li><a href="#">news</a></li>
+					</ul>
+				</div>
+			</div>		
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="footer-menu">
+					<h3>mailing list</h3>
+						<div class="newsletter footer-newsletter">
+						<input type="email" name="email" placeholder="Enter your email address" required="">
+						<button type="submit" name="Submit" class="submit-button">Subscribe</button>
+				</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<div class="bottom-footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="copyright">
+						<p>&copy; goshá 2020</p>
+						<p> all rights reserved <a href="mailto:hello@goshaflowers.com"> hello@goshaflowers.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="google-pay">
+						<p>site by <a href="#" target="_blank">chaos theory</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!----------------------------Footer End-------------------------->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>	
+	 <script src="js/wow.js"></script>	
+    <script src="js/scroll.min.js"></script>
+		<script>
+	$(document).ready(function($) {
+	// Declare the body variable
+	var $body = $("body");
+
+	// Function that shows and hides the sidebar cart
+	$(".cart-button, .close-button, #sidebar-cart-curtain").click(function(e) {
+		e.preventDefault();
+		
+		// Add the show-sidebar-cart class to the body tag
+		$body.toggleClass("show-sidebar-cart");
+
+		// Check if the sidebar curtain is visible
+		if ($("#sidebar-cart-curtain").is(":visible")) {
+			// Hide the curtain
+			$("#sidebar-cart-curtain").fadeOut(500);
+		} else {
+			// Show the curtain
+			$("#sidebar-cart-curtain").fadeIn(500);
+		}
+	});
+	
+	// Function that adds or subtracts quantity when a 
+	// plus or minus button is clicked
+	$body.on('click', '.plus-button, .minus-button', function () {
+		// Get quanitity input values
+		var qty = $(this).closest('.qty').find('.qty-input');
+		var val = parseFloat(qty.val());
+		var max = parseFloat(qty.attr('max'));
+		var min = parseFloat(qty.attr('min'));
+		var step = parseFloat(qty.attr('step'));
+
+		// Check which button is clicked
+		if ($(this).is('.plus-button')) {
+			// Increase the value
+			qty.val(val + step);
+		} else {
+			// Check if minimum button is clicked and that value is 
+			// >= to the minimum required
+			if (min && min >= val) {
+				// Do nothing because value is the minimum required
+				qty.val(min);
+			} else if (val > 0) {
+				// Subtract the value
+				qty.val(val - step);
+			}
+		}
+	});
+});
+
+	</script>	
+
+	</body>
+</html>

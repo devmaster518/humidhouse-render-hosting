@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class="h-100">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">	
+        <link rel="stylesheet" href="css/animate.css">	
+        <link rel="stylesheet" href="css/font-awesome.min.css"> 
+		<link rel="stylesheet" href="slider/owl.carousel.css">					
+		<link rel="stylesheet" href="slider/owl.theme.default.css">
+		<link rel="stylesheet" href="slider/slick.css">			
+	</head>
+	<body class="h-100">
+		<!------------------------------Header Start-------------------->
+		<header class="header-menu py-3">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-4">
+						<div class="flower">Flowers</div>
+						<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+						<label for="openSidebarMenu" class="sidebarIconToggle">
+							<div class="spinner diagonal part-1" ></div>
+							<div class="spinner horizontal"></div>
+							<div class="spinner diagonal part-2"></div>
+						</label>
+						<div id="sidebarMenu">
+							<ul class="sidebarMenuInner">
+							<h3>flowers</h3>
+							<li><a href="#" target="_blank">goshá voyage</a></li>
+							<li><a href="#" target="_blank">occasions spéciale</a></li>
+							<li><a href="#" target="_blank">art deco</a></li>
+							<li><a href="#" target="_blank">bespoke bouquets</a></li>
+							<li><a href="#" target="_blank">goshá weekly</a></li>
+							<h3>shop</h3>
+							<li><a href="#" target="_blank">moon calendar</a></li>
+							<li><a href="#" target="_blank">candles</a></li>
+							<li><a href="#" target="_blank">vases</a></li>
+							<li><a href="#" target="_blank">ceramics</a></li>
+							<li><a href="#" target="_blank">goshá</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-4">						
+					</div>
+					<div class="col-4">
+						<div class="text-end">
+							<a class="btn fw-bold text-nowrap me-2 d-none d-lg-inline-block" style="color:white !important;" href="https://goshaflowers.com/account/login">account</a>							
+							<a class="btn cart-button fw-bold text-nowrap me-2 d-none d-lg-inline-block" style="color:white !important;" href="https://goshaflowers.com/cart">cart <i class="fa fa-shopping-bag"></i></a>
+							<select class="form-control d-inline-block w-auto" id="langSelector">
+								<option value="en" selected>English</option>
+								<option value="ar">Arabic</option>
+							</select>														
+						</div>
+						<aside id="sidebar-cart">
+							<main>
+								<a href="#" class="close-button"><span class="close-icon">X</span></a>
+								<h2>Shopping Bag <span class="count">3</span></h2>
+								<ul class="products">
+									<li class="product">
+										<a href="#" class="product-link">
+											<span class="product-image">
+												<img src="images/blog-img-3.jpg" alt="Product Photo">
+											</span>
+											<span class="product-details">
+												<h3>Very Cool Product One</h3>
+												<span class="qty-price">
+													<span class="qty">
+														<button class="minus-button" id="minus-button-1">-</button>
+														<input type="number" id="qty-input-1" class="qty-input" step="1" min="1" max="1000" name="qty-input" value="1" pattern="[0-9]*" title="Quantity" inputmode="numeric">
+														<button class="plus-button" id="plus-button-1">+</button>
+														<input type="hidden" name="item-price" id="item-price-1" value="12.00">
+													</span>
+													<span class="price">$16.00</span>
+												</span>
+											</span>
+										</a>
+										<a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
+									</li>
+									<li class="product">
+										<a href="#" class="product-link">
+											<span class="product-image">
+												<img src="images/blog-img-3.jpg" alt="Product Photo">
+											</span>
+											<span class="product-details">
+												<h3>Very Cool Product Two with Long Title</h3>
+												<span class="qty-price">
+													<span class="qty">
+														<button class="minus-button" id="minus-button-1">-</button>
+														<input type="number" id="qty-input-2" class="qty-input" step="1" min="1" max="1000" name="qty-input" value="1" pattern="[0-9]*" title="Quantity" inputmode="numeric">
+														<button class="plus-button" id="plus-button-1">+</button>
+														<input type="hidden" name="item-price" id="item-price-2" value="12.00">
+													</span>
+													<span class="price">$28.00</span>
+												</span>
+											</span>
+										</a>
+										<a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
+									</li>
+									<li class="product">
+										<a href="#" class="product-link">
+											<span class="product-image">
+												<img src="images/blog-img-3.jpg" alt="Product Photo">
+											</span>
+											<span class="product-details">
+												<h3>Very Cool Product Three</h3>
+												<span class="qty-price">
+													<span class="qty">
+														<button class="minus-button" id="minus-button-1">-</button>
+														<input type="number" id="qty-input-2" class="qty-input" step="1" min="1" max="1000" name="qty-input" value="1" pattern="[0-9]*" title="Quantity" inputmode="numeric">
+														<button class="plus-button" id="plus-button-1">+</button>
+														<input type="hidden" name="item-price" id="item-price-2" value="12.00">
+													</span>
+													<span class="price">$16.00</span>
+												</span>
+											</span>
+										</a>
+										<a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
+									</li>
+								</ul>
+								<div class="totals">
+									<div class="subtotal">
+										<span class="label">Subtotal:</span> <span class="amount">$54.00</span>
+									</div>
+								</div>
+								<div class="action-buttons">
+									<a class="view-cart-button" href="#">Cart</a><a class="checkout-button" href="#">Checkout</a>
+								</div>
+							</main>
+						</aside>
+						<div id="sidebar-cart-curtain"></div> 
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="banner-slider position-relative p-0">
+			<div class="row g-0 h-100">
+				<div class="col-md-6">
+					<div style="position: absolute; translate: 119% 210%; width: 30%;">
+						<img src="images/logo.png">
+					</div>
+					<img class="d-block w-100 h-100 object-fit-cover" src="images/banner-1.jpg" />
+					
+				</div>
+				<div class="col-md-6">
+					<div class="row g-0 row-cols-1 h-100">
+						<div class="col"><img class="d-block w-100 h-100 object-fit-cover" src="images/banner-2.jpg" /></div>
+						<div class="col"><img class="d-block w-100 h-100 object-fit-cover" src="images/banner-3.jpg" /></div>
+					</div>
+				</div>
+			</div>
+			<div class="rotate-menu">
+				<ul>
+					<li><a href="#">news</a></li>
+					<li><a href="#">studios</a></li>
+					<li><a href="#">instagram</a></li>
+					<li><a href="https://goshaflowers.com/pages/contact">contact</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="subscribe">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="subscribe-heading">
+							<h3>:h3</h3>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<form class="newsletter" method="post">
+							<div class="form-control-wrapper form-control-icon-end position-relative">
+								<input class="form-control form-control-newsletter text-start rounded-0" type="text" autocomplete="off" placeholder="Enter your email address" required="" />
+								<button class="btn btn-sm position-absolute position-absolute-end top-50 translate-middle-y" style ="padding-right: 0px !important;" type="submit"><i class="fa fa-arrow-right fs-4"></i></button>
+							</div>
+						</form>	
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="gosha-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="gosha-content-paragraph">
+							<p>:gosha-content-paragraph</p>
+						</div>
+					</div>
+					
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="shop-link">
+							<p>01 send flowers</p>
+							<a href="#">shop now</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="shop-link">
+							<p>02 bespoke bouquets</p>
+							<a href="#">shop now</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="shop-link">
+							<p>03 goshá weekly</p>
+							<a href="#">shop now</a>
+						</div>
+					</div>
+					<div class="col-md-3 col-sm-6 col-xs-12">
+						<div class="shop-link">
+							<p>04 everlasting</p>
+							<a href="#">shop now</a>
+						</div>
+					</div>			
+				</div>
+			</div>
+		</section>
+
+
+		<section class="gosha-shop">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="gosha-shop-heading">
+							<h2>shop candles</h2>
+						</div>
+					</div>
+					
+					<div id="demo1">
+						<div class="span12">
+
+							<div id="owl-demo1" class="owl-carousel">
+
+								<div class="item">
+									<div class="blog-item">
+										<img src="images/flower-img.jpg">
+										<h2 class="product-title">armagnac, safran, cuir</h2>
+										<div class="heading-link">
+											<a href="#">
+												<p>cirerie de gascogne</p>
+												<p>AED 165</p>
+											</a>
+										</div>
+										<div class="add-to-cart"><a href="#">add to cart</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="blog-item">
+										<img src="images/flower-img.jpg">
+										<h2 class="product-title">armagnac, safran, cuir</h2>
+										<div class="heading-link">
+											<a href="#">
+												<p>cirerie de gascogne</p>
+												<p>AED 165</p>
+											</a>
+										</div>
+										<div class="add-to-cart"><a href="#">add to cart</a></div>
+									</div>
+								</div>								
+
+								<div class="item">
+									<div class="blog-item">
+										<img src="images/flower-img.jpg">
+										<h2 class="product-title">armagnac, safran, cuir</h2>
+										<div class="heading-link">
+											<a href="#">
+												<p>cirerie de gascogne</p>
+												<p>AED 165</p>
+											</a>
+										</div>
+										<div class="add-to-cart"><a href="#">add to cart</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="blog-item">
+										<img src="images/flower-img.jpg">
+										<h2 class="product-title">armagnac, safran, cuir</h2>
+										<div class="heading-link">
+											<a href="#">
+												<p>cirerie de gascogne</p>
+												<p>AED 165</p>
+											</a>
+										</div>
+										<div class="add-to-cart"><a href="#">add to cart</a></div>
+									</div>
+								</div>
+
+								<div class="item">
+									<div class="blog-item">
+										<img src="images/flower-img.jpg">
+										<h2 class="product-title">armagnac, safran, cuir</h2>
+										<div class="heading-link">
+											<a href="#">
+												<p>cirerie de gascogne</p>
+												<p>AED 165</p>
+											</a>
+										</div>
+										<div class="add-to-cart"><a href="#">add to cart</a></div>
+									</div>
+								</div>								
+							</div>							
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>
+		<section class="home-about">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="about-img">
+							<img src="images/about-img.jpg">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="about-content">
+							<h3>"Everyday I see or hear something that more or less kills me with delight" - Mary Oliver</h3>
+							<p>This Humid House was founded in 2017 and comprises a team of designers with offices in Singapore and Paris. Our intention is to develop a language expressed through plants and flowers that is reflective of our climate, geography and collective culture. <p>
+							<p>As a botanical design studio, our focus is on the contemporary. We ask ourselves: how do we put together living material in a way that feels fresh (and relevant) today?<p>
+						</div>
+					</div>			
+				</div>
+			</div>
+		</section>
+
+		<section class="client-logo">
+			<div class="container-fluid">
+				<div>
+					<div>
+						<div class="client-logo-heading">
+							<img src="images/logo-2.png">
+						</div>
+					</div>
+					<div id="demo2">
+						<div id="owl-demo2">
+							<div class="item">
+								<div class="client-logo-img">
+									<img src="images/client-logo-1.png">
+								</div>
+							</div>
+							<div class="item">
+								<div class="client-logo-img">
+									<img src="images/client-logo-2.png">
+								</div>
+							</div>
+							<div class="item">
+								<div class="client-logo-img">
+									<img src="images/client-logo-3.png">
+								</div>
+							</div>
+							<div class="item">
+								<div class="client-logo-img">
+									<img src="images/client-logo-1.png">
+								</div>
+							</div>
+							<div class="item">
+								<div class="client-logo-img">
+									<img src="images/client-logo-2.png">
+								</div>
+							</div>
+							<div class="item">
+								<div class="client-logo-img">
+									<img src="images/client-logo-3.png">
+								</div>
+							</div>
+							<div class="item">
+								<div class="client-logo-img">
+									<img src="images/client-logo-1.png">
+								</div>
+							</div>
+							<div class="item">
+								<div class="client-logo-img">
+									<img src="images/client-logo-2.png">
+								</div>
+							</div>
+							<div class="item">
+								<div class="client-logo-img">
+									<img src="images/client-logo-3.png">
+								</div>
+							</div>
+							<div class="item">
+								<div class="client-logo-img">
+									<img src="images/client-logo-1.png">
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2 col-sm-6 col-xs-6">
+						<div class="footer-menu">
+							<h3>customer services</h3>
+							<ul>
+								<li><a href="#">Home</a></li>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">checkout</a></li>
+								<li><a href="#">Privacy-Policy</a></li>
+								<li><a href="#">Contact Us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-6">
+						<div class="footer-menu">
+							<h3>shop</h3>
+							<ul>
+								<li><a href="#">candles</a></li>
+								<li><a href="#">vases</a></li>
+								<li><a href="#">gosha</a></li>
+								<li><a href="#">vases</a></li>
+								<li><a href="#">gosha</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-6">
+						<div class="footer-menu">
+							<h3>information</h3>
+							<ul>
+							<li><a href="#">privacy policy</a></li>
+								<li><a href="#">terms & conditions</a></li>
+								<li><a href="#">terms of service</a></li>
+								<li><a href="#">refund policy</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-2 col-sm-6 col-xs-6">
+						<div class="footer-menu">
+							<h3>connect</h3>
+							<ul>
+								<li><a href="#">contact</a></li>
+								<li><a href="#">instagram</a></li>
+								<li><a href="#">studios</a></li>
+								<li><a href="#">news</a></li>
+							</ul>
+						</div>
+					</div>		
+
+					<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="footer-menu">
+							<h3>mailing list</h3>
+							<form class="newsletter" method="post">
+								<div class="form-control-wrapper form-control-icon-end position-relative">
+									<input class="form-control form-control-newsletter text-start rounded-0" type="text" autocomplete="off" placeholder="Enter your email address" required="" />
+									<button class="btn btn-sm position-absolute position-absolute-end top-50 translate-middle-y" style ="padding-right: 0px !important;" type="submit"><i class="fa fa-arrow-right fs-4"></i></button>
+								</div>
+							</form>	
+						</div>
+					</div>			
+				</div>
+			</div>
+			<div class="bottom-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="copyright">
+								<p>&copy; goshá 2020</p>
+								<p> all rights reserved <a href="mailto:hello@goshaflowers.com"> hello@goshaflowers.com</a></p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="google-pay">
+								<p>site by <a href="#" target="_blank">chaos theory</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+<!----------------------------Footer End-------------------------->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>	
+	 <script src="js/wow.js"></script>	
+	 <script src="slider/owl.carousel.js"></script>
+	 <script src="slider/slick.min.js"></script>
+	 <script src="js/LanguageSelector.min.js"></script>
+	 <script src="js/scroll.min.js"></script>
+    <script src="js/locale.js"></script>
+	<script>
+	$(document).ready(function($) {
+	// Declare the body variable
+	var $body = $("body");
+
+	// Function that shows and hides the sidebar cart
+	
+	
+	// Function that adds or subtracts quantity when a 
+	// plus or minus button is clicked
+	$body.on('click', '.plus-button, .minus-button', function () {
+		// Get quanitity input values
+		var qty = $(this).closest('.qty').find('.qty-input');
+		var val = parseFloat(qty.val());
+		var max = parseFloat(qty.attr('max'));
+		var min = parseFloat(qty.attr('min'));
+		var step = parseFloat(qty.attr('step'));
+
+		// Check which button is clicked
+		if ($(this).is('.plus-button')) {
+			// Increase the value
+			qty.val(val + step);
+		} else {
+			// Check if minimum button is clicked and that value is 
+			// >= to the minimum required
+			if (min && min >= val) {
+				// Do nothing because value is the minimum required
+				qty.val(min);
+			} else if (val > 0) {
+				// Subtract the value
+				qty.val(val - step);
+			}
+		}
+	});
+});
+
+	</script>
+
+	<script>
+	$(document).ready(function() {
+
+		$("#owl-demo1").owlCarousel({
+			loop:true,
+    		margin:20,
+    		nav:true,
+			responsive:{
+				0:{
+					items:1
+				},
+				576:{
+					items:2
+				},
+				768:{
+					items:3
+				},
+				992:{
+					items:4,
+				},
+				1400:{
+					items:5,
+					margin:30,
+				},
+			}
+
+		});
+
+		// Custom Navigation Events
+		$(".next1").click(function() {
+			owl.trigger('owl.next');
+		})
+		$(".prev1").click(function() {
+			owl.trigger('owl.prev');
+		})
+
+	});
+
+	</script> 
+	<script>
+		$(document).ready(function() {
+			$("#owl-demo2").slick({
+				speed:5e3,
+				autoplay:!0,
+				autoplaySpeed:0,
+				centerMode:!1,
+				cssEase:"linear",
+				slidesToShow:1,
+				slidesToScroll:1,
+				variableWidth:!0,
+				infinite:!0,
+				initialSlide:2,
+				arrows:!1,
+				buttons:!1
+			})
+		});
+
+	</script>
+	<script type="text/javascript">
+		var l = new LanguageSelector();
+		$(document).on("change", "#langSelector", function () {
+			var s = $(this).children("option:selected").val();
+			l.setLang(s);
+			window.location = "index.html";
+		});
+		l.parse();
+	</script>	
+	</body>
+</html>

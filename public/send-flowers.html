@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="eg">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">	
+        <link rel="stylesheet" href="css/animate.css">	
+        <link rel="stylesheet" href="css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="slider/owl.carousel.css">			
+	</head>
+	<body>
+		
+<!------------------------------Header Start-------------------->
+<header class="header-menu">
+<div class="container-fluid">
+<div class="row">
+<div class="col-md-4">
+	<div class="flower">Flowers</div>
+  <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+  <label for="openSidebarMenu" class="sidebarIconToggle">
+    <div class="spinner diagonal part-1"></div>
+    <div class="spinner horizontal"></div>
+    <div class="spinner diagonal part-2"></div>
+  </label>
+  <div id="sidebarMenu">
+    <ul class="sidebarMenuInner">
+	  <h3>flowers</h3>
+      <li><a href="#" target="_blank">goshá voyage</a></li>
+      <li><a href="#" target="_blank">occasions spéciale</a></li>
+      <li><a href="#" target="_blank">art deco</a></li>
+      <li><a href="#" target="_blank">bespoke bouquets</a></li>
+      <li><a href="#" target="_blank">goshá weekly</a></li>
+	  <h3>shop</h3>
+      <li><a href="#" target="_blank">moon calendar</a></li>
+      <li><a href="#" target="_blank">candles</a></li>
+      <li><a href="#" target="_blank">vases</a></li>
+      <li><a href="#" target="_blank">ceramics</a></li>
+      <li><a href="#" target="_blank">goshá</a></li>
+    </ul>
+  </div>
+  </div>
+  <div class="col-md-4">
+	  <div class="site-logo">
+			<img src="images/logo.png">
+		</div>
+	</div>
+  <div class="col-md-4">
+ <nav id="main-nav">
+	<a class="cart-button" href="#">
+		<span class="bag-count">cart <i class="fa fa-shopping-bag"></i></span>
+	</a>
+</nav>
+<aside id="sidebar-cart">
+	<main>
+		<a href="#" class="close-button"><span class="close-icon">X</span></a>
+		<h2>Shopping Bag <span class="count">3</span></h2>
+		<ul class="products">
+			<li class="product">
+				<a href="#" class="product-link">
+					<span class="product-image">
+						<img src="images/blog-img-3.jpg" alt="Product Photo">
+					</span>
+					<span class="product-details">
+						<h3>Very Cool Product One</h3>
+						<span class="qty-price">
+							<span class="qty">
+								<button class="minus-button" id="minus-button-1">-</button>
+								<input type="number" id="qty-input-1" class="qty-input" step="1" min="1" max="1000" name="qty-input" value="1" pattern="[0-9]*" title="Quantity" inputmode="numeric">
+								<button class="plus-button" id="plus-button-1">+</button>
+								<input type="hidden" name="item-price" id="item-price-1" value="12.00">
+							</span>
+							<span class="price">$16.00</span>
+						</span>
+					</span>
+				</a>
+				<a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
+			</li>
+			<li class="product">
+				<a href="#" class="product-link">
+					<span class="product-image">
+						<img src="images/blog-img-3.jpg" alt="Product Photo">
+					</span>
+					<span class="product-details">
+						<h3>Very Cool Product Two with Long Title</h3>
+						<span class="qty-price">
+							<span class="qty">
+								<button class="minus-button" id="minus-button-1">-</button>
+								<input type="number" id="qty-input-2" class="qty-input" step="1" min="1" max="1000" name="qty-input" value="1" pattern="[0-9]*" title="Quantity" inputmode="numeric">
+								<button class="plus-button" id="plus-button-1">+</button>
+								<input type="hidden" name="item-price" id="item-price-2" value="12.00">
+							</span>
+							<span class="price">$28.00</span>
+						</span>
+					</span>
+				</a>
+				<a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
+			</li>
+			<li class="product">
+				<a href="#" class="product-link">
+					<span class="product-image">
+						<img src="images/blog-img-3.jpg" alt="Product Photo">
+					</span>
+					<span class="product-details">
+						<h3>Very Cool Product Three</h3>
+						<span class="qty-price">
+							<span class="qty">
+								<form action="#" name="qty-form" id="qty-form-1">
+									<button class="minus-button" id="minus-button-1">-</button>
+									<input type="number" id="qty-input-3" class="qty-input" step="1" min="1" max="1000" name="qty-input" value="1" pattern="[0-9]*" title="Quantity" inputmode="numeric">
+									<button class="plus-button" id="plus-button-1">+</button>
+									<input type="hidden" name="item-price" id="item-price-3" value="12.00">
+								</form>
+							</span>
+							<span class="price">$12.00</span>
+						</span>
+					</span>
+				</a>
+				<a href="#remove" class="remove-button"><span class="remove-icon">X</span></a>
+			</li>
+		</ul>
+		<div class="totals">
+			<div class="subtotal">
+				<span class="label">Subtotal:</span> <span class="amount">$54.00</span>
+			</div>
+		</div>
+		<div class="action-buttons">
+			<a class="view-cart-button" href="#">Cart</a><a class="checkout-button" href="#">Checkout</a>
+		</div>
+	</main>
+</aside>
+<div id="sidebar-cart-curtain"></div> 
+</div>
+</div>
+</div>
+</header>
+
+<section class="flower-section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="flower-img">
+					<img src="images/about-img.jpg">
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="flower-img-content">
+					<h3>"Everyday I see or hear something that more or less kills me with delight" - Mary Oliver</h3>
+					<p>This Humid House was founded in 2017 and comprises a team of designers with offices in Singapore and Paris. Our intention is to develop a language expressed through plants and flowers that is reflective of our climate, geography and collective culture. <p>
+					<i>each goshá designer creation is always unique using your selected reference style as inspiration. our team will capture the feel and composition of your chosen reference using the available fresh seasonal florals, with the signature goshá touch. </i>
+				</div>
+			</div>		
+		</div>
+	</div>
+</section>
+
+<section class="collapse-area">
+  <div class="container">
+    <div class="row">
+      <div class="collapse-tab">
+        <div class="panel-group" id="accordion">
+          <div class="panel panel-default" id="panel1">
+            <!-- Start: Tab-1 -->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="">
+                  select floral design reference*
+                  <span class="bar hidden-xs"></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in">
+              <div class="panel-body">
+				  <div class="col-md-12">
+					  <div class="row">
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="cappadocia" name="fav-cappadocia" value="cappadocia">
+										<label for="cappadocia">cappadocia (pictured - size large)</label><br>
+									</div>
+									<img src="images/flower-images.jpg">
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="cappadocia2" name="fav-cappadocia2" value="cappadocia2">
+										<label for="cappadocia2">cappadocia (pictured - size large)</label><br>
+									</div>
+									<img src="images/flower-images.jpg">
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="cappadocia3" name="fav-cappadocia3" value="cappadocia3">
+										<label for="cappadocia3">cappadocia (pictured - size large)</label><br>
+									</div>
+									<img src="images/flower-images.jpg">
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="cappadocia4" name="fav-cappadocia4" value="cappadocia4">
+										<label for="cappadocia4">cappadocia (pictured - size large)</label><br>
+									</div>
+									<img src="images/flower-images.jpg">
+							  </div>
+						  </div>
+						  
+					  </div>
+				  </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default" id="panel2">
+            <!-- Start: Tab-2 -->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapsed">
+                  select size*
+                  <span class="bar hidden-xs"></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse">
+              <div class="panel-body">
+				  <div class="col-md-12">
+					  <div class="row">
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-size">
+									<div class="florel-size">
+										<input type="radio" id="size1" name="fav-size1" value="size1">
+									</div>
+									<div class="size-content">
+										<a href="#">small <br>a variety of 8-12 stems <br>AED 450</a>
+									</div>									
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-size">
+									<div class="florel-size">
+										<input type="radio" id="size2" name="fav-size2" value="size2">
+									</div>
+									<div class="size-content">
+										<a href="#">medium <br>a variety of 8-12 stems <br>AED 450</a>
+									</div>									
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-size">
+									<div class="florel-size">
+										<input type="radio" id="size3" name="fav-size3" value="size3">
+									</div>
+									<div class="size-content">
+										<a href="#">large <br>a variety of 8-12 stems <br>AED 450</a>
+									</div>									
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-size">
+									<div class="florel-size">
+										<input type="radio" id="size4" name="fav-size4" value="size4">
+									</div>
+									<div class="size-content">
+										<a href="#">xlarge <br>a variety of 8-12 stems <br>AED 450</a>
+									</div>									
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-size">
+									<div class="florel-size">
+										<input type="radio" id="size5" name="fav-size5" value="size5">
+									</div>
+									<div class="size-content">
+										<a href="#">huge <br>a variety of 8-12 stems <br>AED 450</a>
+									</div>									
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-size">
+									<div class="florel-size">
+										<input type="radio" id="size6" name="fav-size6" value="size6">
+									</div>
+									<div class="size-content">
+										<a href="#">massive <br>a variety of 8-12 stems <br>AED 450</a>
+									</div>									
+							  </div>
+						  </div>
+						  
+					  </div>
+				  </div>			  
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default" id="panel3">
+            <!-- Start: Tab-3 -->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapsed">
+                  select packaging*
+                  <span class="bar hidden-xs"></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse">
+              <div class="panel-body">
+				  <div class="col-md-12">
+					  <div class="row">
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="cappadocia5" name="fav-cappadocia5" value="cappadocia5">
+										<label for="cappadocia5">cappadocia (pictured - size large)</label><br>
+									</div>
+									<img src="images/flower-images.jpg">
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="cappadocia6" name="fav-cappadocia6" value="cappadocia6">
+										<label for="cappadocia6">cappadocia (pictured - size large)</label><br>
+									</div>
+									<img src="images/flower-images.jpg">
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="cappadocia7" name="fav-cappadocia7" value="cappadocia7">
+										<label for="cappadocia7">cappadocia (pictured - size large)</label><br>
+									</div>
+									<img src="images/flower-images.jpg">
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="cappadocia8" name="fav-cappadocia8" value="cappadocia8">
+										<label for="cappadocia8">cappadocia (pictured - size large)</label><br>
+									</div>
+									<img src="images/flower-images.jpg">
+							  </div>
+						  </div>
+						  
+					  </div>
+				  </div>			  
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default" id="panel4">
+            <!-- Start: Tab-4 -->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" class="collapsed">
+                  select notecard*
+                  <span class="bar hidden-xs"></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="panel-collapse collapse">
+              <div class="panel-body">				
+			  <div class="col-md-12">
+					  <div class="row">
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="cappadocia11" name="fav-cappadocia11" value="cappadocia11">
+										<label for="cappadocia11">sunset series: lake maggiore AED 15</label><br>
+									</div>
+									<img src="images/gradient.png">
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="cappadocia12" name="fav-cappadocia12" value="cappadocia12">
+										<label for="cappadocia12">sunset series: lake maggiore AED 15</label><br>
+									</div>
+									<img src="images/gradient.png">
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="cappadocia13" name="fav-cappadocia13" value="cappadocia13">
+										<label for="cappadocia13">sunset series: lake maggiore AED 15</label><br>
+									</div>
+									<img src="images/gradient.png">
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="cappadocia14" name="fav-cappadocia14" value="cappadocia14">
+										<label for="cappadocia14">sunset series: lake maggiore AED 15</label><br>
+									</div>
+									<img src="images/gradient.png">
+							  </div>
+						  </div>
+						  
+					  </div>
+				  </div>
+              </div>
+            </div>
+          </div>		  
+          <div class="panel panel-default" id="panel5">
+            <!-- Start: Tab-4 -->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" class="collapsed">
+                  select add-on
+                  <span class="bar hidden-xs"></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFive" class="panel-collapse collapse">
+              <div class="panel-body">	
+			  <div class="col-md-12">
+					  <div class="row">
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="sunset1" name="fav-sunset1" value="sunset1">
+										<label for="sunset1">sunset series: lake maggiore AED 15</label><br>
+									</div>
+									<img src="images/bottle.png">
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="sunset2" name="fav-sunset2" value="sunset2">
+										<label for="sunset2">sunset series: lake maggiore AED 15</label><br>
+									</div>
+									<img src="images/bottle.png">
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="sunset3" name="fav-sunset3" value="sunset3">
+										<label for="sunset3">sunset series: lake maggiore AED 15</label><br>
+									</div>
+									<img src="images/bottle.png">
+							  </div>
+						  </div>
+						  <div class="col-md-3 col-sm-6 col-xs-12">
+							  <div class="select-florel">
+									<div class="florel-option">
+										<input type="radio" id="sunset4" name="fav-sunset4" value="sunset4">
+										<label for="sunset4">sunset series: lake maggiore AED 15</label><br>
+									</div>
+									<img src="images/bottle.png">
+							  </div>
+						  </div>
+						  
+					  </div>
+				  </div>
+              </div>
+            </div>
+          </div>		  
+          <div class="panel panel-default" id="panel6">
+            <!-- Start: Tab-4 -->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapsesix" class="collapsed">
+                  select delivery date*
+                  <span class="bar hidden-xs"></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapsesix" class="panel-collapse collapse">
+              <div class="panel-body">
+				  <div class="panel-body">
+					<label for="start">
+						Enter the Date:
+					</label>
+
+					<input type="date" name="begin" placeholder="dd-mm-yyyy" 
+						   value="" min="1997-01-01" max="2030-12-31">				  
+				  </div>
+              </div>
+            </div>
+          </div>		  
+          <div class="panel panel-default" id="panel7">
+            <!-- Start: Tab-4 -->
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseseven" class="collapsed">
+                  write a love letter
+                  <span class="bar hidden-xs"></span>
+                </a>
+              </h4>
+            </div>
+            <div id="collapseseven" class="panel-collapse collapse">
+              <div class="panel-body">
+			  <textarea id="w3review" name="w3review" rows="4" cols="50"></textarea>
+              </div>
+            </div>
+          </div>	
+		  
+        </div>
+      </div>
+	  <div class="submit-cart-option">
+			<a href="#">Add to cart</a>
+	  </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 col-sm-6 col-xs-6">
+				<div class="footer-menu">
+					<h3>customer services</h3>
+					<ul>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">checkout</a></li>
+						<li><a href="#">Privacy-Policy</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-6 col-xs-6">
+				<div class="footer-menu">
+					<h3>shop</h3>
+					<ul>
+						<li><a href="#">candles</a></li>
+						<li><a href="#">vases</a></li>
+						<li><a href="#">gosha</a></li>
+						<li><a href="#">vases</a></li>
+						<li><a href="#">gosha</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-6 col-xs-6">
+				<div class="footer-menu">
+					<h3>information</h3>
+					<ul>
+					<li><a href="#">privacy policy</a></li>
+						<li><a href="#">terms & conditions</a></li>
+						<li><a href="#">terms of service</a></li>
+						<li><a href="#">refund policy</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-2 col-sm-6 col-xs-6">
+				<div class="footer-menu">
+					<h3>connect</h3>
+					<ul>
+						<li><a href="#">contact</a></li>
+						<li><a href="#">instagram</a></li>
+						<li><a href="#">studios</a></li>
+						<li><a href="#">news</a></li>
+					</ul>
+				</div>
+			</div>		
+
+			<div class="col-md-4 col-sm-6 col-xs-12">
+				<div class="footer-menu">
+					<h3>mailing list</h3>
+						<div class="newsletter footer-newsletter">
+						<input type="email" name="email" placeholder="Enter your email address" required="">
+						<button type="submit" name="Submit" class="submit-button">Subscribe</button>
+				</div>
+				</div>
+			</div>			
+		</div>
+	</div>
+	<div class="bottom-footer">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="copyright">
+						<p>&copy; goshá 2020</p>
+						<p> all rights reserved <a href="mailto:hello@goshaflowers.com"> hello@goshaflowers.com</a></p>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="google-pay">
+						<p>site by <a href="#" target="_blank">chaos theory</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!----------------------------Footer End-------------------------->
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>	
+	 <script src="js/wow.js"></script>	
+    <script src="js/scroll.min.js"></script>
+	<script>
+	$(document).ready(function($) {
+	// Declare the body variable
+	var $body = $("body");
+
+	// Function that shows and hides the sidebar cart
+	$(".cart-button, .close-button, #sidebar-cart-curtain").click(function(e) {
+		e.preventDefault();
+		
+		// Add the show-sidebar-cart class to the body tag
+		$body.toggleClass("show-sidebar-cart");
+
+		// Check if the sidebar curtain is visible
+		if ($("#sidebar-cart-curtain").is(":visible")) {
+			// Hide the curtain
+			$("#sidebar-cart-curtain").fadeOut(500);
+		} else {
+			// Show the curtain
+			$("#sidebar-cart-curtain").fadeIn(500);
+		}
+	});
+	
+	// Function that adds or subtracts quantity when a 
+	// plus or minus button is clicked
+	$body.on('click', '.plus-button, .minus-button', function () {
+		// Get quanitity input values
+		var qty = $(this).closest('.qty').find('.qty-input');
+		var val = parseFloat(qty.val());
+		var max = parseFloat(qty.attr('max'));
+		var min = parseFloat(qty.attr('min'));
+		var step = parseFloat(qty.attr('step'));
+
+		// Check which button is clicked
+		if ($(this).is('.plus-button')) {
+			// Increase the value
+			qty.val(val + step);
+		} else {
+			// Check if minimum button is clicked and that value is 
+			// >= to the minimum required
+			if (min && min >= val) {
+				// Do nothing because value is the minimum required
+				qty.val(min);
+			} else if (val > 0) {
+				// Subtract the value
+				qty.val(val - step);
+			}
+		}
+	});
+});
+
+	</script>	
+
+	</body>
+</html>

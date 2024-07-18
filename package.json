@@ -1,0 +1,19 @@
+{
+  "name": "humidhouse-render-hosting",
+  "version": "1.0.0",
+  "description": "> humidhouse project for Rabbit",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "render",
+    "static"
+  ],
+  "author": "devmaster518",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
