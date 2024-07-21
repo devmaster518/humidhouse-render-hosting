@@ -10,22 +10,16 @@
         <link rel="stylesheet" href="css/font-awesome.min.css"> 
 		<link rel="stylesheet" href="slider/owl.carousel.css">					
 		<link rel="stylesheet" href="slider/owl.theme.default.css">
-		<link rel="stylesheet" href="slider/slick.css">		
+		<link rel="stylesheet" href="slider/slick.css">	
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">	
 		<style>
-			@media(max-width: 768px){
-				.logo-container {
-					position: absolute !important;
-					width: 30% !important;
-					/* Adjust positioning for ltr */
-					translate: 119% 450%;
+			@media(max-width: 768px){			
+				.header-menu {
+					margin-top:-30px;
 				}
-				
-				/* RTL direction */
-				[dir="rtl"] .logo-container {
-					/* Adjust positioning for rtl */
-					translate: -119% 450%;
+				.site-title{
+					padding-top:60px;
 				}
-
 				.footer-container-contents {
 					text-align: center !important;
 				}
@@ -34,17 +28,56 @@
 					text-align: center !important;
 				}
 			}
-			.header-menu {
-				display: block;
-				margin: 0 auto;
-				width: 100%;
-				max-width: 100%;
-				box-shadow: none;
-				background-color: transparent;
-				position: fixed;
-				overflow: hidden;
-				z-index: 10;
-				/* background: #cccccc;    */
+			.cart-header, .cart-footer {
+				font-weight: bold;
+			}
+			.cart-item {
+				margin-bottom: 20px;
+				border-bottom: 1px solid #000;
+				padding-bottom: 20px;
+			}
+			.cart-item img {
+				max-width: 100px;
+			}
+			.quantity-control {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+			}
+			.quantity-control input {
+				width: 50px;
+				text-align: center;
+				margin: 5px;
+			}
+			.quantity-control .btn {
+				width: 40px;
+			}
+			.item-total {
+				text-align: right;
+			}
+			.order-note {
+				margin-top: 20px;
+			}
+			.checkout {
+				text-align: right;
+				margin-top: 20px;
+			}
+			.remove {
+				color: #000;
+				text-decoration: none;
+				font-size: 14px;
+				margin-top: 10px;
+			}
+			.remove:hover {
+				text-decoration: underline;
+			}
+			.quantity-buttons {
+				display: flex;
+				align-items: center;
+			}
+			.quantity-buttons button {
+				margin: 0 5px;
 			}
 		</style>	
 	</head>
@@ -53,7 +86,7 @@
 		<header class="header-menu py-3">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-4">
+					<div class="col-4" >
 						<div class="flower">Flowers</div>
 						<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
 						<label for="openSidebarMenu" class="sidebarIconToggle">
@@ -82,8 +115,8 @@
 					</div>
 					<div class="col-4">
 						<div class="text-end">
-							<a class="btn fw-bold text-nowrap me-2 d-none d-lg-inline-block" style="color:white !important;" href="LogIn2.html">account</a>							
-							<a class="btn cart-button fw-bold text-nowrap me-2 d-none d-lg-inline-block" style="color:white !important;" href="cart2.html">cart <i class="fa fa-shopping-bag"></i></a>
+							<a class="btn fw-bold text-nowrap me-2 d-none d-lg-inline-block" style="color:white !important;" href="login.html">account</a>							
+							<a class="btn cart-button fw-bold text-nowrap me-2 d-none d-lg-inline-block" style="color:white !important;" href="cart.html">cart <i class="fa fa-shopping-bag"></i></a>
 							<select class="form-control d-inline-block w-auto" id="langSelector">
 								<option value="en" selected>English</option>
 								<option value="ar">Arabic</option>
@@ -170,263 +203,114 @@
 				</div>
 			</div>
 		</header>
-
-		<section class="banner-slider position-relative p-0">
-			<div class="row g-0 h-100">
-				<div class="col-md-6">
-					<div class="logo-container">
-						<img src="images/logo.png">
-					</div>
-					<img class="d-block w-100 h-100 object-fit-cover" src="images/banner-1.jpg" />					
-				</div>
-				<div class="col-md-6">
-					<div class="row g-0 row-cols-1 h-100">
-						<div class="col"><img class="d-block w-100 h-100 object-fit-cover" src="images/banner-2.jpg" /></div>
-						<div class="col"><img class="d-block w-100 h-100 object-fit-cover" src="images/banner-3.jpg" /></div>
-					</div>
-				</div>
+		<div class="container mt-5">   
+			<div class="site-title"><h2>Cart</h2>
+				<br>
+				<br></div>     
+			<div class="cart-header row">
+				<div class="col-md-6">Product</div>
+				<div class="col-md-2 text-center">Quantity</div>
+				<div class="col-md-4 text-center">Total</div>
 			</div>
-			<div class="rotate-menu">
-				<ul>
-					<li><a href="#">news</a></li>
-					<li><a href="#">studios</a></li>
-					<li><a href="#">instagram</a></li>
-					<li><a href="contact-us2.html">contact</a></li>
-				</ul>
-			</div>
-		</section>
-
-		<section class="subscribe">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="subscribe-heading">
-							<h3>:h3</h3>
-						</div>
+			<div class="cart-item row" data-price="1580">
+				<div class="col-md-2">
+					<img src="images/flower-img.jpg" alt="e plus a candle holder">
+				</div>
+				<div class="col-md-4">
+					<div>e plus a candle holder</div>
+					<div>AED 1,580</div>
+				</div>
+				<div class="col-md-2 text-center quantity-control">
+					<div class="quantity-buttons">
+						<button class="btn btn-outline-secondary decrease">-</button>
+						<input type="text" class="form-control d-inline" value="2" readonly>
+						<button class="btn btn-outline-secondary increase">+</button>
 					</div>
-					<div class="col-md-6">
-						<form class="newsletter" method="post">
-							<div class="form-control-wrapper form-control-icon-end position-relative">
-								<input class="form-control form-control-newsletter text-start rounded-0" type="text" autocomplete="off" placeholder="Enter your email address" required="" />
-								<button class="btn btn-sm position-absolute position-absolute-end top-50 translate-middle-y" style ="padding-right: 0px !important;" type="submit"><i class="fa fa-arrow-right fs-4"></i></button>
-							</div>
-						</form>	
-					</div>
+					<a href="#" class="remove">remove</a>
+				</div>
+				<div class="col-md-4 item-total text-center">
+					AED 3,160
 				</div>
 			</div>
-		</section>
-
-		<section class="gosha-content">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="gosha-content-paragraph">
-							<p>:gosha-content-paragraph</p>
-						</div>
+			<div class="cart-item row" data-price="195">
+				<div class="col-md-2">
+					<img src="images/flower1.jpg" alt="">
+				</div>
+				<div class="col-md-4">
+					<div>armagnac, safran, cuir parfum de maison</div>
+					<div>AED 195</div>
+				</div>
+				<div class="col-md-2 text-center quantity-control">
+					<div class="quantity-buttons">
+						<button class="btn btn-outline-secondary decrease">-</button>
+						<input type="text" class="form-control d-inline" value="3" readonly>
+						<button class="btn btn-outline-secondary increase">+</button>
 					</div>
-					
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="shop-link">
-							<p>01 send flowers</p>
-							<a href="#">shop now</a>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="shop-link">
-							<p>02 bespoke bouquets</p>
-							<a href="#">shop now</a>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="shop-link">
-							<p>03 goshá weekly</p>
-							<a href="#">shop now</a>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="shop-link">
-							<p>04 everlasting</p>
-							<a href="#">shop now</a>
-						</div>
-					</div>			
+					<a href="#" class="remove">remove</a>
+				</div>
+				<div class="col-md-4 item-total text-center">
+					AED 585
 				</div>
 			</div>
-		</section>
-
-
-		<section class="gosha-shop">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="gosha-shop-heading">
-							<h2>shop candles</h2>
-						</div>
-					</div>
-					
-					<div id="demo1">
-						<div class="span12">
-
-							<div id="owl-demo1" class="owl-carousel">
-
-								<div class="item">
-									<div class="blog-item">
-										<a href="detail2.html"><img src="images/flower-img.jpg"></a>
-										<h2 class="product-title">armagnac, safran, cuir</h2>
-										<div class="heading-link">
-											<a href="#">
-												<p>cirerie de gascogne</p>
-												<p>AED 165</p>
-											</a>
-										</div>
-										<div class="add-to-cart"><a href="cart2.html">add to cart</a></div>
-									</div>
-								</div>
-
-								<div class="item">
-									<div class="blog-item">
-										<a href="detail2.html"><img src="images/flower-img.jpg"></a>
-										<h2 class="product-title">armagnac, safran, cuir</h2>
-										<div class="heading-link">
-											<a href="#">
-												<p>cirerie de gascogne</p>
-												<p>AED 165</p>
-											</a>
-										</div>
-										<div class="add-to-cart"><a href="cart2.html">add to cart</a></div>
-									</div>
-								</div>								
-
-								<div class="item">
-									<div class="blog-item">
-										<a href="detail2.html"><img src="images/flower-img.jpg"></a>
-										<h2 class="product-title">armagnac, safran, cuir</h2>
-										<div class="heading-link">
-											<a href="#">
-												<p>cirerie de gascogne</p>
-												<p>AED 165</p>
-											</a>
-										</div>
-										<div class="add-to-cart"><a href="cart2.html">add to cart</a></div>
-									</div>
-								</div>
-
-								<div class="item">
-									<div class="blog-item">
-										<a href="detail2.html"><img src="images/flower-img.jpg"></a>
-										<h2 class="product-title">armagnac, safran, cuir</h2>
-										<div class="heading-link">
-											<a href="#">
-												<p>cirerie de gascogne</p>
-												<p>AED 165</p>
-											</a>
-										</div>
-										<div class="add-to-cart"><a href="cart2.html">add to cart</a></div>
-									</div>
-								</div>
-
-								<div class="item">
-									<div class="blog-item">
-										<a href="detail2.html"><img src="images/flower-img.jpg"></a>
-										<h2 class="product-title">armagnac, safran, cuir</h2>
-										<div class="heading-link">
-											<a href="#">
-												<p>cirerie de gascogne</p>
-												<p>AED 165</p>
-											</a>
-										</div>
-										<div class="add-to-cart"><a href="cart2.html">add to cart</a></div>
-									</div>
-								</div>								
-							</div>							
-						</div>
-					</div>		
+			<div class="order-note row">
+				<div class="col-md-12">
+					<label for="order-note">Add Order Note</label>
+					<textarea id="order-note" class="form-control" rows="4" placeholder="how can we help you?"></textarea>
 				</div>
 			</div>
-		</section>
-		<section class="home-about">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="about-img">
-							<img src="images/about-img.jpg">
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="about-content" dir="rtl">
-							<h3>"Everyday I see or hear something that more or less kills me with delight" - Mary Oliver</h3>
-							<p>This Humid House was founded in 2017 and comprises a team of designers with offices in Singapore and Paris. Our intention is to develop a language expressed through plants and flowers that is reflective of our climate, geography and collective culture.</p>
-							<p>As a botanical design studio, our focus is on the contemporary. We ask ourselves: how do we put together living material in a way that feels fresh (and relevant) today?</p>
-						</div>
-					</div>			
-				</div>
+			<div class="cart-footer row mt-3">
+				<div class="col-md-6">Shipping & taxes calculated at checkout</div>
+				<div class="col-md-6 text-right">Total: <span id="cart-total">AED 3,745</span></div>
 			</div>
-		</section>
-
-		<section class="client-logo">
-			<div class="container-fluid">
-				<div>
-					<div>
-						<div class="client-logo-heading">
-							<img src="images/logo-2.png">
-						</div>
-					</div>
-					<div id="demo2">
-						<div id="owl-demo2">
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-1.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-2.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-3.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-1.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-2.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-3.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-1.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-2.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-3.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-1.png">
-								</div>
-							</div>
-						</div>
-					</div>		
-				</div>
+			<div class="checkout">
+				<button class="btn btn-outline-dark">checkout</button>
 			</div>
-		</section>
+		</div>
+		<script>
+			function updateTotal() {
+				let cartTotal = 0;
+				document.querySelectorAll('.cart-item').forEach(item => {
+					const price = parseFloat(item.dataset.price);
+					const quantity = parseInt(item.querySelector('input').value);
+					const itemTotal = price * quantity;
+					item.querySelector('.item-total').textContent = 'AED ' + itemTotal.toFixed(2);
+					cartTotal += itemTotal;
+				});
+				document.getElementById('cart-total').textContent = 'AED ' + cartTotal.toFixed(2);
+			}
+	
+			document.querySelectorAll('.increase').forEach(button => {
+				button.addEventListener('click', () => {
+					const input = button.parentElement.querySelector('input');
+					input.value = parseInt(input.value) + 1;
+					updateTotal();
+				});
+			});
+	
+			document.querySelectorAll('.decrease').forEach(button => {
+				button.addEventListener('click', () => {
+					const input = button.parentElement.querySelector('input');
+					if (parseInt(input.value) > 1) {
+						input.value = parseInt(input.value) - 1;
+						updateTotal();
+					}
+				});
+			});
+	
+			document.querySelectorAll('.remove').forEach(link => {
+				link.addEventListener('click', (event) => {
+					event.preventDefault();
+					link.closest('.cart-item').remove();
+					updateTotal();
+				});
+			});
+	
+			updateTotal();
+		</script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		
 		<footer>
 			<div class="container footer-container-contents">
 				<div class="row">
@@ -493,12 +377,12 @@
 			<div class="bottom-footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="col-md-6 col-sm-6 col-xs-12">
 							<div class="google-pay">
 								<p>site by <a href="#" target="_blank" style="margin:auto !important;">chaos theory</a></p>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="col-md-6 col-sm-6 col-xs-12">
 							<div class="copyright">
 								<p>&copy; goshá 2020</p>
 								<p> all rights reserved <a href="mailto:hello@goshaflowers.com"> hello@goshaflowers.com</a></p>
@@ -628,7 +512,7 @@
 		$(document).on("change", "#langSelector", function () {
 			var s = $(this).children("option:selected").val();
 			l.setLang(s);
-			window.location = "index.html";
+			window.location = "cart2.html";
 		});
 		l.parse();
 	</script>	

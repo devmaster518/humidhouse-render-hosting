@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="slider/owl.carousel.css">					
 		<link rel="stylesheet" href="slider/owl.theme.default.css">
 		<link rel="stylesheet" href="slider/slick.css">		
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
 		<style>
 			@media(max-width: 768px){
 				.logo-container {
@@ -33,19 +34,109 @@
 				.bottom-footer{					
 					text-align: center !important;
 				}
+				.main{
+					padding-top:20px;
+				}
 			}
-			.header-menu {
-				display: block;
-				margin: 0 auto;
-				width: 100%;
-				max-width: 100%;
-				box-shadow: none;
-				background-color: transparent;
-				position: fixed;
-				overflow: hidden;
-				z-index: 10;
-				/* background: #cccccc;    */
-			}
+			.radio-option {
+        margin-bottom: 20px;
+      }
+
+      .radio-label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        font-size: 14px;
+      }
+
+      .radio-label input[type="radio"] {
+        margin-right: 10px;
+      }
+
+      .radio-content {
+        margin-left: 25px;
+        color: #3e3e3e;
+      }
+
+      .price {
+        font-weight: bold;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f9f0f9;
+      }
+
+      .container {
+        padding: 20px;
+      }
+
+      .image-container img {
+        width: 70%;
+        height: 70%;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .text-container h1 {
+        font-size: 24px;
+        color: #3e3e3e;
+      }
+
+      .text-container p {
+        font-size: 16px;
+        color: #3e3e3e;
+      }
+
+      .radio-image-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .radio-image-container img {
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+        margin: 10px;
+      }
+
+      .btn-custom {
+        background-color: #ffa500;
+        color: white;
+        border: none;
+      }
+	  .accordion-button{
+		text-align: left;
+	  }
+
+	  [dir="rtl"] .accordion-button{
+		text-align: right;
+	  }
+      .accordion-button:after {
+        content: "+";
+        font-size: 20px;
+        float: right;
+	    }
+
+      .accordion-button.collapsed:after {
+        content: "-";
+      }
+
+      .top-level-item .accordion-button:after {
+        content: none;
+      }
+	  .card {
+		padding: 0 !important;
+		margin-bottom: 10px;
+		color:#3e3e3e;
+	  }
+	  .card:hover{
+		text-decoration: none !important;
+	  }
 		</style>	
 	</head>
 	<body class="h-100">
@@ -82,8 +173,8 @@
 					</div>
 					<div class="col-4">
 						<div class="text-end">
-							<a class="btn fw-bold text-nowrap me-2 d-none d-lg-inline-block" style="color:white !important;" href="LogIn2.html">account</a>							
-							<a class="btn cart-button fw-bold text-nowrap me-2 d-none d-lg-inline-block" style="color:white !important;" href="cart2.html">cart <i class="fa fa-shopping-bag"></i></a>
+							<a class="btn fw-bold text-nowrap me-2 d-none d-lg-inline-block" style="color:white !important;" href="login.html">account</a>							
+							<a class="btn cart-button fw-bold text-nowrap me-2 d-none d-lg-inline-block" style="color:white !important;" href="cart.html">cart <i class="fa fa-shopping-bag"></i></a>
 							<select class="form-control d-inline-block w-auto" id="langSelector">
 								<option value="en" selected>English</option>
 								<option value="ar">Arabic</option>
@@ -170,263 +261,272 @@
 				</div>
 			</div>
 		</header>
-
-		<section class="banner-slider position-relative p-0">
-			<div class="row g-0 h-100">
-				<div class="col-md-6">
-					<div class="logo-container">
-						<img src="images/logo.png">
-					</div>
-					<img class="d-block w-100 h-100 object-fit-cover" src="images/banner-1.jpg" />					
-				</div>
-				<div class="col-md-6">
-					<div class="row g-0 row-cols-1 h-100">
-						<div class="col"><img class="d-block w-100 h-100 object-fit-cover" src="images/banner-2.jpg" /></div>
-						<div class="col"><img class="d-block w-100 h-100 object-fit-cover" src="images/banner-3.jpg" /></div>
-					</div>
-				</div>
+		<div class="container" >
+			<div class="row main">
+			  <div class="col-md-6 image-container">
+				<img src="images/flower-img.jpg" alt="Flower arrangement" />
+			  </div>
+			  <div class="col-md-6 text-container">
+				<h1>goshá weekly</h1>
+				<p>
+				  goshá to your home i.e., a weekly selection of curated fresh stems
+				  delivered to your home, retail space or office. each week you will
+				  receive a love letter from goshá in a carefully selected designer
+				  vase or in craft wrapping paper for you to place in your own vases.
+				</p>
+				<p>
+				  each goshá designer creation is always unique using your selected
+				  reference style as inspiration. our team will capture the feel and
+				  composition of your chosen reference using the available freshest
+				  seasonal florals, with the signature goshá touch.
+				</p>
+			  </div>
 			</div>
-			<div class="rotate-menu">
-				<ul>
-					<li><a href="#">news</a></li>
-					<li><a href="#">studios</a></li>
-					<li><a href="#">instagram</a></li>
-					<li><a href="contact-us2.html">contact</a></li>
-				</ul>
-			</div>
-		</section>
-
-		<section class="subscribe">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="subscribe-heading">
-							<h3>:h3</h3>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<form class="newsletter" method="post">
-							<div class="form-control-wrapper form-control-icon-end position-relative">
-								<input class="form-control form-control-newsletter text-start rounded-0" type="text" autocomplete="off" placeholder="Enter your email address" required="" />
-								<button class="btn btn-sm position-absolute position-absolute-end top-50 translate-middle-y" style ="padding-right: 0px !important;" type="submit"><i class="fa fa-arrow-right fs-4"></i></button>
-							</div>
-						</form>	
-					</div>
+			<br />
+	  
+			<div id="accordion">
+			  <div class="card top-level-item">
+				<div class="card-header" id="headingOne">
+				  <h5 class="mb-0">
+					<button
+					  class="btn btn-link accordion-button"
+					  data-toggle="collapse"
+					  data-target="#collapseOne"
+					  aria-expanded="false"
+					  aria-controls="collapseThree"					  
+					>
+					  Select floral design reference
+					</button>
+				  </h5>
 				</div>
-			</div>
-		</section>
-
-		<section class="gosha-content">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="gosha-content-paragraph">
-							<p>:gosha-content-paragraph</p>
-						</div>
+				<div
+				  id="collapseOne"
+				  class="collapse"
+				  aria-labelledby="headingOne"
+				  data-parent="#accordion"
+				>
+				  <div class="card-body">
+					<!-- Love letter content -->
+					<div class="radio-image-container">
+					  <div class="form-check">
+						<input
+						  class="form-check-input"
+						  type="radio"
+						  name="floralDesign"
+						  id="seasonal"
+						  value="seasonal"
+						/>
+						<label class="form-check-label" for="seasonal">
+						  <img src="images/flower1.jpg" alt="Seasonal" />
+						  Seasonal
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input
+						  class="form-check-input"
+						  type="radio"
+						  name="floralDesign"
+						  id="tropical"
+						  value="tropical"
+						/>
+						<label class="form-check-label" for="tropical">
+						  <img src="images/flower1.jpg" alt="Tropical" />
+						  Tropical
+						</label>
+					  </div>
+					  <div class="form-check">
+						<input
+						  class="form-check-input"
+						  type="radio"
+						  name="floralDesign"
+						  id="unexpected"
+						  value="unexpected"
+						/>
+						<label class="form-check-label" for="unexpected">
+						  <img src="images/flower1.jpg" alt="Unexpected" />
+						  Unexpected
+						</label>
+					  </div>
 					</div>
-					
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="shop-link">
-							<p>01 send flowers</p>
-							<a href="#">shop now</a>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="shop-link">
-							<p>02 bespoke bouquets</p>
-							<a href="#">shop now</a>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="shop-link">
-							<p>03 goshá weekly</p>
-							<a href="#">shop now</a>
-						</div>
-					</div>
-					<div class="col-md-3 col-sm-6 col-xs-12">
-						<div class="shop-link">
-							<p>04 everlasting</p>
-							<a href="#">shop now</a>
-						</div>
-					</div>			
+				  </div>
 				</div>
-			</div>
-		</section>
-
-
-		<section class="gosha-shop">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="gosha-shop-heading">
-							<h2>shop candles</h2>
-						</div>
-					</div>
-					
-					<div id="demo1">
-						<div class="span12">
-
-							<div id="owl-demo1" class="owl-carousel">
-
-								<div class="item">
-									<div class="blog-item">
-										<a href="detail2.html"><img src="images/flower-img.jpg"></a>
-										<h2 class="product-title">armagnac, safran, cuir</h2>
-										<div class="heading-link">
-											<a href="#">
-												<p>cirerie de gascogne</p>
-												<p>AED 165</p>
-											</a>
-										</div>
-										<div class="add-to-cart"><a href="cart2.html">add to cart</a></div>
-									</div>
-								</div>
-
-								<div class="item">
-									<div class="blog-item">
-										<a href="detail2.html"><img src="images/flower-img.jpg"></a>
-										<h2 class="product-title">armagnac, safran, cuir</h2>
-										<div class="heading-link">
-											<a href="#">
-												<p>cirerie de gascogne</p>
-												<p>AED 165</p>
-											</a>
-										</div>
-										<div class="add-to-cart"><a href="cart2.html">add to cart</a></div>
-									</div>
-								</div>								
-
-								<div class="item">
-									<div class="blog-item">
-										<a href="detail2.html"><img src="images/flower-img.jpg"></a>
-										<h2 class="product-title">armagnac, safran, cuir</h2>
-										<div class="heading-link">
-											<a href="#">
-												<p>cirerie de gascogne</p>
-												<p>AED 165</p>
-											</a>
-										</div>
-										<div class="add-to-cart"><a href="cart2.html">add to cart</a></div>
-									</div>
-								</div>
-
-								<div class="item">
-									<div class="blog-item">
-										<a href="detail2.html"><img src="images/flower-img.jpg"></a>
-										<h2 class="product-title">armagnac, safran, cuir</h2>
-										<div class="heading-link">
-											<a href="#">
-												<p>cirerie de gascogne</p>
-												<p>AED 165</p>
-											</a>
-										</div>
-										<div class="add-to-cart"><a href="cart2.html">add to cart</a></div>
-									</div>
-								</div>
-
-								<div class="item">
-									<div class="blog-item">
-										<a href="detail2.html"><img src="images/flower-img.jpg"></a>
-										<h2 class="product-title">armagnac, safran, cuir</h2>
-										<div class="heading-link">
-											<a href="#">
-												<p>cirerie de gascogne</p>
-												<p>AED 165</p>
-											</a>
-										</div>
-										<div class="add-to-cart"><a href="cart2.html">add to cart</a></div>
-									</div>
-								</div>								
-							</div>							
-						</div>
-					</div>		
+			  </div>
+			  <div class="card top-level-item">
+				<div class="card-header" id="headingTwo">
+				  <h5 class="mb-0">
+					<button
+					  class="btn btn-link accordion-button"
+					  data-toggle="collapse"
+					  data-target="#collapseTwo"
+					  aria-expanded="false"
+					  aria-controls="collapseTwo"
+					>
+					  Select size
+					</button>
+				  </h5>
 				</div>
-			</div>
-		</section>
-		<section class="home-about">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="about-img">
-							<img src="images/about-img.jpg">
+				<div
+				  id="collapseTwo"
+				  class="collapse"
+				  aria-labelledby="headingTwo"
+				  data-parent="#accordion"
+				>
+				  <div class="card-body">
+					<!-- Delivery date selection content -->
+					<div class="container">
+					  <div class="row">
+						<div class="col-md-3 radio-option">
+						  <label class="radio-label">
+							<input
+							  type="radio"
+							  name="sizeOption"
+							  value="medium-4-weeks"
+							/>
+							<div class="radio-content">
+							  <div>medium - 4 weeks</div>
+							  <div>a variety of 12-15 stems</div>
+							  <div>every week for 4 weeks</div>
+							  <div class="price">AED 550 per week</div>
+							  <div>AED 2,200</div>
+							</div>
+						  </label>
 						</div>
+						<div class="col-md-3 radio-option">
+						  <label class="radio-label">
+							<input
+							  type="radio"
+							  name="sizeOption"
+							  value="medium-8-weeks"
+							/>
+							<div class="radio-content">
+							  <div>medium - 8 weeks</div>
+							  <div>a variety of 12-15 stems</div>
+							  <div>every week for 8 weeks</div>
+							  <div class="price">AED 550 per week</div>
+							  <div>AED 4,400</div>
+							</div>
+						  </label>
+						</div>
+						<div class="col-md-3 radio-option">
+						  <label class="radio-label">
+							<input
+							  type="radio"
+							  name="sizeOption"
+							  value="large-4-weeks"
+							/>
+							<div class="radio-content">
+							  <div>large - 4 weeks</div>
+							  <div>a variety of 15-20 stems</div>
+							  <div>every week for 4 weeks</div>
+							  <div class="price">AED 650 per week</div>
+							  <div>AED 2,600</div>
+							</div>
+						  </label>
+						</div>
+						<div class="col-md-3 radio-option">
+						  <label class="radio-label">
+							<input
+							  type="radio"
+							  name="sizeOption"
+							  value="large-8-weeks"
+							/>
+							<div class="radio-content">
+							  <div>large - 8 weeks</div>
+							  <div>a variety of 15-20 stems</div>
+							  <div>every week for 8 weeks</div>
+							  <div class="price">AED 650 per week</div>
+							  <div>AED 5,200</div>
+							</div>
+						  </label>
+						</div>
+					  </div>
 					</div>
-					<div class="col-md-6">
-						<div class="about-content" dir="rtl">
-							<h3>"Everyday I see or hear something that more or less kills me with delight" - Mary Oliver</h3>
-							<p>This Humid House was founded in 2017 and comprises a team of designers with offices in Singapore and Paris. Our intention is to develop a language expressed through plants and flowers that is reflective of our climate, geography and collective culture.</p>
-							<p>As a botanical design studio, our focus is on the contemporary. We ask ourselves: how do we put together living material in a way that feels fresh (and relevant) today?</p>
-						</div>
-					</div>			
+				  </div>
 				</div>
-			</div>
-		</section>
-
-		<section class="client-logo">
-			<div class="container-fluid">
-				<div>
-					<div>
-						<div class="client-logo-heading">
-							<img src="images/logo-2.png">
+			  </div>
+			  <div class="card top-level-item">
+				<div class="card-header" id="headingThree">
+				  <h5 class="mb-0">
+					<button
+					  class="btn btn-link accordion-button"
+					  data-toggle="collapse"
+					  data-target="#collapseThree"
+					  aria-expanded="false"
+					  aria-controls="collapseTwo"
+					>
+					  Select delivery date
+					</button>
+				  </h5>
+				</div>
+				<div
+				  id="collapseThree"
+				  class="collapse"
+				  aria-labelledby="headingThree"
+				  data-parent="#accordion"
+				>
+				  <div class="card-body">
+					<!-- Delivery date selection content -->
+					<div class="container">
+					  <label for="dateInput">Date:</label>
+					  <div class="date-picker">
+						<input
+						  type="text"
+						  id="dateInput"
+						  placeholder="Select date"
+						  readonly
+						/>
+						<button type="button" id="toggleButton">&#9662;</button>
+					  </div>
+					  <div class="calendar" id="calendar" style="display: none">
+						<div class="calendar-header">
+						  <span id="prevMonth">&#9664;</span>
+						  <span id="currentMonth">July 2024</span>
+						  <span id="nextMonth">&#9654;</span>
 						</div>
+						<div class="calendar-body">
+						  <!-- Calendar dates will be populated here by JavaScript -->
+						</div>
+					  </div>
 					</div>
-					<div id="demo2">
-						<div id="owl-demo2">
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-1.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-2.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-3.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-1.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-2.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-3.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-1.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-2.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-3.png">
-								</div>
-							</div>
-							<div class="item">
-								<div class="client-logo-img">
-									<img src="images/client-logo-1.png">
-								</div>
-							</div>
-						</div>
-					</div>		
+				  </div>
 				</div>
+			  </div>
+			  <div class="card top-level-item">
+				<div class="card-header" id="headingFour">
+				  <h5 class="mb-0">
+					<button
+					  class="btn btn-link accordion-button"
+					  data-toggle="collapse"
+					  data-target="#collapseFour"
+					  aria-expanded="false"
+					  aria-controls="collapseThree"
+					>
+					  Write a love letter
+					</button>
+				  </h5>
+				</div>
+				<div
+				  id="collapseFour"
+				  class="collapse"
+				  aria-labelledby="headingFour"
+				  data-parent="#accordion"
+				>
+				  <div class="card-body">
+					<!-- Love letter content -->
+				  </div>
+				</div>
+			  </div>
 			</div>
-		</section>
+	  
+			<hr />
+	  
+			<a href="cart.html"
+			  ><button class="btn btn-custom btn-block">
+				Add to cart - AED 0
+			  </button></a
+			>
+		  </div>
+		
 		<footer>
 			<div class="container footer-container-contents">
 				<div class="row">
@@ -493,12 +593,12 @@
 			<div class="bottom-footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="col-md-6 col-sm-6 col-xs-12">
 							<div class="google-pay">
 								<p>site by <a href="#" target="_blank" style="margin:auto !important;">chaos theory</a></p>
 							</div>
 						</div>
-						<div class="col-md-4 col-sm-6 col-xs-12">
+						<div class="col-md-6 col-sm-6 col-xs-12">
 							<div class="copyright">
 								<p>&copy; goshá 2020</p>
 								<p> all rights reserved <a href="mailto:hello@goshaflowers.com"> hello@goshaflowers.com</a></p>
@@ -628,9 +728,43 @@
 		$(document).on("change", "#langSelector", function () {
 			var s = $(this).children("option:selected").val();
 			l.setLang(s);
-			window.location = "index.html";
+			window.location = "detail2.html";
 		});
 		l.parse();
 	</script>	
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#accordion .collapse").on("shown.bs.collapse", function () {
+          $(this)
+            .prev()
+            .find(".accordion-button")
+            .text(function (_, oldText) {
+              return oldText.replace("+", "-");
+            });
+        });
+
+        $("#accordion .collapse").on("hidden.bs.collapse", function () {
+          $(this)
+            .prev()
+            .find(".accordion-button")
+            .text(function (_, oldText) {
+              return oldText.replace("-", "+");
+            });
+        });
+
+        // Initialize the text of the buttons to '+'
+        $("#accordion .accordion-button").each(function () {
+          var btn = $(this);
+          if (btn.attr("aria-expanded") === "false") {
+            btn.text(btn.text() + " +");
+          } else {
+            btn.text(btn.text() + " -");
+          }
+        });
+      });
+    </script>
 	</body>
 </html>

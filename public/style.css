@@ -183,18 +183,19 @@ html[dir="rtl"] #sidebarMenu {
     transition: all 0.3s;
     box-sizing: border-box;
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     z-index: 99;
     height: 100%;
     width: 100%;
-    top: 22px;
-    left: 72px;
+    top: 15px;
+    left: 90px;
     height: 22px;
     width: 22px;
 }
 html[dir="rtl"] .sidebarIconToggle {
     left: auto;
-    right: 72px;
+    right: 90px;
+    top:15px;
 }
 .spinner {
     transition: all 0.3s;
@@ -259,17 +260,18 @@ ul.sidebarMenuInner h3 {
     padding-top: 30px;
 }
 .flower {
+    top: 10px;
     text-align: left;
     position: absolute;
-    top: 16px;
-    left: 10px;
+    /* top: 16px; */
+    /* left: 10px; */
     font-weight: bold;
     font-size: 17px;
-    color:white !important;
+    color: white !important;
 }
 html[dir="rtl"] .flower {
     left: auto;
-    right: 10px;
+    right: 15px;
 }
 .site-logo img {
     width: 100px;
