@@ -266,50 +266,6 @@
 				<button class="btn btn-outline-dark">checkout</button>
 			</div>
 		</div>
-		<script>
-			function updateTotal() {
-				let cartTotal = 0;
-				document.querySelectorAll('.cart-item').forEach(item => {
-					const price = parseFloat(item.dataset.price);
-					const quantity = parseInt(item.querySelector('input').value);
-					const itemTotal = price * quantity;
-					item.querySelector('.item-total').textContent = 'AED ' + itemTotal.toFixed(2);
-					cartTotal += itemTotal;
-				});
-				document.getElementById('cart-total').textContent = 'AED ' + cartTotal.toFixed(2);
-			}
-	
-			document.querySelectorAll('.increase').forEach(button => {
-				button.addEventListener('click', () => {
-					const input = button.parentElement.querySelector('input');
-					input.value = parseInt(input.value) + 1;
-					updateTotal();
-				});
-			});
-	
-			document.querySelectorAll('.decrease').forEach(button => {
-				button.addEventListener('click', () => {
-					const input = button.parentElement.querySelector('input');
-					if (parseInt(input.value) > 1) {
-						input.value = parseInt(input.value) - 1;
-						updateTotal();
-					}
-				});
-			});
-	
-			document.querySelectorAll('.remove').forEach(link => {
-				link.addEventListener('click', (event) => {
-					event.preventDefault();
-					link.closest('.cart-item').remove();
-					updateTotal();
-				});
-			});
-	
-			updateTotal();
-		</script>
-		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		
 		<footer>
 			<div class="container footer-container-contents">
@@ -515,6 +471,50 @@
 			window.location = "cart2.html";
 		});
 		l.parse();
-	</script>	
+	</script>
+	<script>
+		function updateTotal() {
+			let cartTotal = 0;
+			document.querySelectorAll('.cart-item').forEach(item => {
+				const price = parseFloat(item.dataset.price);
+				const quantity = parseInt(item.querySelector('input').value);
+				const itemTotal = price * quantity;
+				item.querySelector('.item-total').textContent = 'AED ' + itemTotal.toFixed(2);
+				cartTotal += itemTotal;
+			});
+			document.getElementById('cart-total').textContent = 'AED ' + cartTotal.toFixed(2);
+		}
+
+		document.querySelectorAll('.increase').forEach(button => {
+			button.addEventListener('click', () => {
+				const input = button.parentElement.querySelector('input');
+				input.value = parseInt(input.value) + 1;
+				updateTotal();
+			});
+		});
+
+		document.querySelectorAll('.decrease').forEach(button => {
+			button.addEventListener('click', () => {
+				const input = button.parentElement.querySelector('input');
+				if (parseInt(input.value) > 1) {
+					input.value = parseInt(input.value) - 1;
+					updateTotal();
+				}
+			});
+		});
+
+		document.querySelectorAll('.remove').forEach(link => {
+			link.addEventListener('click', (event) => {
+				event.preventDefault();
+				link.closest('.cart-item').remove();
+				updateTotal();
+			});
+		});
+
+		updateTotal();
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>	
 	</body>
 </html>
