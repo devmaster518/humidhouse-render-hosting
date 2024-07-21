@@ -1,306 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Layout with Bootstrap</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>details</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <style>
-         
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            box-sizing: border-box;
-            background-color: #f9f0f9;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #f9f0f9;
+      }
 
-        .radio-option {
-            margin-bottom: 20px;
-        }
+      .radio-option {
+        margin-bottom: 20px;
+      }
 
-        .radio-label {
-            display: flex;
-            align-items: center;
-            margin-bottom: 0; 
-            font-size:14px;           
-        }
+      .radio-label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        font-size: 14px;
+      }
 
-        .radio-label input[type="radio"] {
-            margin-right: 10px;
-        }
+      .radio-label input[type="radio"] {
+        margin-right: 10px;
+      }
 
-        .radio-content {
-            margin-left: 25px;
-            color:#3e3e3e;
-        }
+      .radio-content {
+        margin-left: 25px;
+        color: #3e3e3e;
+      }
 
-        .price {
-            font-weight: bold;
-        }
+      .price {
+        font-weight: bold;
+      }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #f9f0f9;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #f9f0f9;
+      }
 
-        .container {
-            padding: 20px;
-        }
+      .container {
+        padding: 20px;
+      }
 
-        .image-container img {
-            width: 70%;
-            height:70%;
-            height: auto;
-            border-radius: 10px;
-        }
+      .image-container img {
+        width: 70%;
+        height: 70%;
+        height: auto;
+        border-radius: 10px;
+      }
 
-        .text-container h1 {
-            font-size: 24px;
-            color: #3e3e3e;
-        }
+      .text-container h1 {
+        font-size: 24px;
+        color: #3e3e3e;
+      }
 
-        .text-container p {
-            font-size: 16px;
-            color: #3e3e3e;
-        }
+      .text-container p {
+        font-size: 16px;
+        color: #3e3e3e;
+      }
 
-        .radio-image-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+      .radio-image-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-        .radio-image-container img {
-            width: 100%;
-            height: auto;
-            max-width: 200px;
-            margin: 10px;
-        }
+      .radio-image-container img {
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+        margin: 10px;
+      }
 
-        .btn-custom {
-            background-color: #FFA500;
-            color: white;
-            border: none;
-        }
+      .btn-custom {
+        background-color: #ffa500;
+        color: white;
+        border: none;
+      }
 
-        .accordion-button:after {
-            content: '+';
-            font-size: 20px;
-            float: right;
-        }
+      .accordion-button:after {
+        content: "+";
+        font-size: 20px;
+        float: right;
+      }
 
-        .accordion-button.collapsed:after {
-            content: '-';
-        }
+      .accordion-button.collapsed:after {
+        content: "-";
+      }
 
-        .top-level-item .accordion-button:after {
-            content: none;
-        }
+      .top-level-item .accordion-button:after {
+        content: none;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-6 image-container">
-                <img src="images/flower-img.jpg" alt="Flower arrangement">
-            </div>
-            <div class="col-md-6 text-container">
-                <h1>goshá weekly</h1>
-                <p>goshá to your home i.e., a weekly selection of curated fresh stems delivered to your home, retail space or office. each week you will receive a love letter from goshá in a carefully selected designer vase or in craft wrapping paper for you to place in your own vases.</p>
-                <p>each goshá designer creation is always unique using your selected reference style as inspiration. our team will capture the feel and composition of your chosen reference using the available freshest seasonal florals, with the signature goshá touch.</p>
-            </div>
+      <div class="row">
+        <div class="col-md-6 image-container">
+          <img src="images/flower-img.jpg" alt="Flower arrangement" />
         </div>
-        <br>    
+        <div class="col-md-6 text-container">
+          <h1>goshá weekly</h1>
+          <p>
+            goshá to your home i.e., a weekly selection of curated fresh stems
+            delivered to your home, retail space or office. each week you will
+            receive a love letter from goshá in a carefully selected designer
+            vase or in craft wrapping paper for you to place in your own vases.
+          </p>
+          <p>
+            each goshá designer creation is always unique using your selected
+            reference style as inspiration. our team will capture the feel and
+            composition of your chosen reference using the available freshest
+            seasonal florals, with the signature goshá touch.
+          </p>
+        </div>
+      </div>
+      <br />
 
-        <div id="accordion">
-            <div class="card top-level-item">
-                <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link accordion-button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Select floral design reference*
-                        </button>
-                    </h5>
+      <div id="accordion">
+        <div class="card top-level-item">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link accordion-button"
+                data-toggle="collapse"
+                data-target="#collapseOne"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Select floral design reference*
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseOne"
+            class="collapse"
+            aria-labelledby="headingOne"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <!-- Love letter content -->
+              <div class="radio-image-container">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="floralDesign"
+                    id="seasonal"
+                    value="seasonal"
+                  />
+                  <label class="form-check-label" for="seasonal">
+                    <img src="images/flower1.jpg" alt="Seasonal" />
+                    Seasonal
+                  </label>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <!-- Love letter content -->
-                        <div class="radio-image-container">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="floralDesign" id="seasonal" value="seasonal">
-                                <label class="form-check-label" for="seasonal">
-                                    <img src="images/flower1.jpg" alt="Seasonal">
-                                    Seasonal
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="floralDesign" id="tropical" value="tropical">
-                                <label class="form-check-label" for="tropical">
-                                    <img src="images/flower1.jpg" alt="Tropical">
-                                    Tropical
-                                </label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="floralDesign" id="unexpected" value="unexpected">
-                                <label class="form-check-label" for="unexpected">
-                                    <img src="images/flower1.jpg" alt="Unexpected">
-                                    Unexpected
-                                </label>
-                            </div>
-                        </div>
-                    </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="floralDesign"
+                    id="tropical"
+                    value="tropical"
+                  />
+                  <label class="form-check-label" for="tropical">
+                    <img src="images/flower1.jpg" alt="Tropical" />
+                    Tropical
+                  </label>
                 </div>
-            </div>            
-            <div class="card top-level-item">
-                <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link accordion-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Select size*
-                        </button>
-                    </h5>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="floralDesign"
+                    id="unexpected"
+                    value="unexpected"
+                  />
+                  <label class="form-check-label" for="unexpected">
+                    <img src="images/flower1.jpg" alt="Unexpected" />
+                    Unexpected
+                  </label>
                 </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
-                        <!-- Delivery date selection content -->
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-3 radio-option">
-                                    <label class="radio-label">
-                                        <input type="radio" name="sizeOption" value="medium-4-weeks">
-                                        <div class="radio-content">
-                                            <div>medium - 4 weeks</div>
-                                            <div>a variety of 12-15 stems</div>
-                                            <div>every week for 4 weeks</div>
-                                            <div class="price">AED 550 per week</div>
-                                            <div>AED 2,200</div>
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="col-md-3 radio-option">
-                                    <label class="radio-label">
-                                        <input type="radio" name="sizeOption" value="medium-8-weeks">
-                                        <div class="radio-content">
-                                            <div>medium - 8 weeks</div>
-                                            <div>a variety of 12-15 stems</div>
-                                            <div>every week for 8 weeks</div>
-                                            <div class="price">AED 550 per week</div>
-                                            <div>AED 4,400</div>
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="col-md-3 radio-option">
-                                    <label class="radio-label">
-                                        <input type="radio" name="sizeOption" value="large-4-weeks">
-                                        <div class="radio-content">
-                                            <div>large - 4 weeks</div>
-                                            <div>a variety of 15-20 stems</div>
-                                            <div>every week for 4 weeks</div>
-                                            <div class="price">AED 650 per week</div>
-                                            <div>AED 2,600</div>
-                                        </div>
-                                    </label>
-                                </div>
-                                <div class="col-md-3 radio-option">
-                                    <label class="radio-label">
-                                        <input type="radio" name="sizeOption" value="large-8-weeks">
-                                        <div class="radio-content">
-                                            <div>large - 8 weeks</div>
-                                            <div>a variety of 15-20 stems</div>
-                                            <div>every week for 8 weeks</div>
-                                            <div class="price">AED 650 per week</div>
-                                            <div>AED 5,200</div>
-                                        </div>
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <div class="card top-level-item">
-                <div class="card-header" id="headingTwo">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link accordion-button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Select delivery date*
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
-                        <!-- Delivery date selection content -->
-                        <div class="container">
-        <label for="dateInput">Date:</label>
-        <div class="date-picker">
-            <input type="text" id="dateInput" placeholder="Select date" readonly>
-            <button type="button" id="toggleButton">&#9662;</button>
+          </div>
         </div>
-        <div class="calendar" id="calendar" style="display: none;">
-            <div class="calendar-header">
-                <span id="prevMonth">&#9664;</span>
-                <span id="currentMonth">July 2024</span>
-                <span id="nextMonth">&#9654;</span>
+        <div class="card top-level-item">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link accordion-button"
+                data-toggle="collapse"
+                data-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Select size*
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseTwo"
+            class="collapse"
+            aria-labelledby="headingTwo"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <!-- Delivery date selection content -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-3 radio-option">
+                    <label class="radio-label">
+                      <input
+                        type="radio"
+                        name="sizeOption"
+                        value="medium-4-weeks"
+                      />
+                      <div class="radio-content">
+                        <div>medium - 4 weeks</div>
+                        <div>a variety of 12-15 stems</div>
+                        <div>every week for 4 weeks</div>
+                        <div class="price">AED 550 per week</div>
+                        <div>AED 2,200</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 radio-option">
+                    <label class="radio-label">
+                      <input
+                        type="radio"
+                        name="sizeOption"
+                        value="medium-8-weeks"
+                      />
+                      <div class="radio-content">
+                        <div>medium - 8 weeks</div>
+                        <div>a variety of 12-15 stems</div>
+                        <div>every week for 8 weeks</div>
+                        <div class="price">AED 550 per week</div>
+                        <div>AED 4,400</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 radio-option">
+                    <label class="radio-label">
+                      <input
+                        type="radio"
+                        name="sizeOption"
+                        value="large-4-weeks"
+                      />
+                      <div class="radio-content">
+                        <div>large - 4 weeks</div>
+                        <div>a variety of 15-20 stems</div>
+                        <div>every week for 4 weeks</div>
+                        <div class="price">AED 650 per week</div>
+                        <div>AED 2,600</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="col-md-3 radio-option">
+                    <label class="radio-label">
+                      <input
+                        type="radio"
+                        name="sizeOption"
+                        value="large-8-weeks"
+                      />
+                      <div class="radio-content">
+                        <div>large - 8 weeks</div>
+                        <div>a variety of 15-20 stems</div>
+                        <div>every week for 8 weeks</div>
+                        <div class="price">AED 650 per week</div>
+                        <div>AED 5,200</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="calendar-body">
-                <!-- Calendar dates will be populated here by JavaScript -->
-            </div>
+          </div>
         </div>
-    </div>
-                    
-                    </div>
+        <div class="card top-level-item">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link accordion-button"
+                data-toggle="collapse"
+                data-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+              >
+                Select delivery date*
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseThree"
+            class="collapse"
+            aria-labelledby="headingThree"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <!-- Delivery date selection content -->
+              <div class="container">
+                <label for="dateInput">Date:</label>
+                <div class="date-picker">
+                  <input
+                    type="text"
+                    id="dateInput"
+                    placeholder="Select date"
+                    readonly
+                  />
+                  <button type="button" id="toggleButton">&#9662;</button>
                 </div>
+                <div class="calendar" id="calendar" style="display: none">
+                  <div class="calendar-header">
+                    <span id="prevMonth">&#9664;</span>
+                    <span id="currentMonth">July 2024</span>
+                    <span id="nextMonth">&#9654;</span>
+                  </div>
+                  <div class="calendar-body">
+                    <!-- Calendar dates will be populated here by JavaScript -->
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="card top-level-item">
-                <div class="card-header" id="headingThree">
-                    <h5 class="mb-0">
-                        <button class="btn btn-link accordion-button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Write a love letter
-                        </button>
-                    </h5>
-                </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                    <div class="card-body">
-                        <!-- Love letter content -->
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="card top-level-item">
+          <div class="card-header" id="headingFour">
+            <h5 class="mb-0">
+              <button
+                class="btn btn-link accordion-button"
+                data-toggle="collapse"
+                data-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+              >
+                Write a love letter
+              </button>
+            </h5>
+          </div>
+          <div
+            id="collapseFour"
+            class="collapse"
+            aria-labelledby="headingFour"
+            data-parent="#accordion"
+          >
+            <div class="card-body">
+              <!-- Love letter content -->
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <hr>
+      <hr />
 
-        <a href="cart.html"><button class="btn btn-custom btn-block">Add to cart - AED 0</button></a>
+      <a href="cart.html"
+        ><button class="btn btn-custom btn-block">
+          Add to cart - AED 0
+        </button></a
+      >
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $('#accordion .collapse').on('shown.bs.collapse', function () {
-                $(this).prev().find('.accordion-button').text(function(_, oldText) {
-                    return oldText.replace('+', '-');
-                });
-            });
-            
-            $('#accordion .collapse').on('hidden.bs.collapse', function () {
-                $(this).prev().find('.accordion-button').text(function(_, oldText) {
-                    return oldText.replace('-', '+');
-                });
-            });
-
-            // Initialize the text of the buttons to '+'
-            $('#accordion .accordion-button').each(function(){
-                var btn = $(this);
-                if (btn.attr('aria-expanded') === 'false') {
-                    btn.text(btn.text() + ' +');
-                } else {
-                    btn.text(btn.text() + ' -');
-                }
+      $(document).ready(function () {
+        $("#accordion .collapse").on("shown.bs.collapse", function () {
+          $(this)
+            .prev()
+            .find(".accordion-button")
+            .text(function (_, oldText) {
+              return oldText.replace("+", "-");
             });
         });
-    </script>    
-</body>
+
+        $("#accordion .collapse").on("hidden.bs.collapse", function () {
+          $(this)
+            .prev()
+            .find(".accordion-button")
+            .text(function (_, oldText) {
+              return oldText.replace("-", "+");
+            });
+        });
+
+        // Initialize the text of the buttons to '+'
+        $("#accordion .accordion-button").each(function () {
+          var btn = $(this);
+          if (btn.attr("aria-expanded") === "false") {
+            btn.text(btn.text() + " +");
+          } else {
+            btn.text(btn.text() + " -");
+          }
+        });
+      });
+    </script>
+  </body>
 </html>
